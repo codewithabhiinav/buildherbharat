@@ -1,0 +1,168 @@
+/* BuildHer Bharat — cursor interaction + accessible typography pass */
+:root {
+  --site-copy-size: 18px;
+  --site-small-size: 13px;
+  --site-heading-size: clamp(60px, 6.2vw, 76px);
+  --site-subheading-size: clamp(25px, 2.25vw, 31px);
+}
+
+/* Typography: clear, consistent scale across the complete site. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { font-size: var(--site-copy-size) !important; line-height: 1.78 !important; }
+main p, main li { font-size: 18px; line-height: 1.82; }
+.hero h1 { font-size: clamp(72px, 8.6vw, 124px) !important; line-height: .98; }
+.section-heading h2,
+.section-intro h2,
+.tracks-heading h2,
+.prizes-copy h2,
+.registration-copy h2,
+.contact-cta h2 {
+  font-size: var(--site-heading-size) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.045em !important;
+}
+.section-heading > p,
+.section-intro > .section-lead,
+.tracks-heading > p,
+.prizes-copy > p,
+.registration-copy .section-lead,
+.contact-cta p,
+.about-content p,
+.eligibility-card p,
+.track-card p,
+.timeline-main p,
+.rule-row p,
+.faq-list details p,
+.partner-card p,
+.person-info p,
+.community-card-copy small,
+.registration-points,
+.eligibility-footnote,
+.people-note {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+}
+.hero-description { font-size: 19px !important; line-height: 1.82 !important; }
+.hero-tagline { font-size: clamp(24px, 2.4vw, 31px) !important; }
+.eligibility-card h3,
+.track-card h3,
+.timeline-main h3,
+.benefits-heading h3,
+.partner-card h3,
+.person-info h3,
+.community-card-copy strong,
+.faq-layout h3,
+.rules-layout h3 {
+  font-size: var(--site-subheading-size) !important;
+  line-height: 1.2 !important;
+}
+.main-nav > a:not(.nav-cta) { font-size: 15px !important; }
+.nav-cta, .button { font-size: 16px !important; padding: 14px 21px; }
+.person-action, .text-link, .registration-qr-top, .registration-qr-bottom { font-size: 14px !important; }
+.person-role, .org-overline, .card-index, .round-label, .eyebrow,
+.announcement-bar, .hero-meta, .poster-caption, .loader-edition, .loader-footnote {
+  font-size: 12px !important;
+}
+.brand-copy strong { font-size: 17px !important; }
+.brand-copy small { font-size: 10px !important; }
+.fact span, .benefits-grid small, .prize-card small, .countdown > div span,
+.deadline-heading, .deadline-countdown > p, .people-panel-label { font-size: 13px !important; }
+.faq-list summary { font-size: 18px !important; line-height: 1.5; }
+.rule-row > span { font-size: 14px !important; }
+input, textarea, select { font-size: 17px !important; }
+
+/* Larger headings remain balanced on phones rather than overflowing. */
+@media (max-width: 760px) {
+  body { font-size: 17px !important; }
+  main p, main li { font-size: 17px; }
+  .hero h1 { font-size: clamp(56px, 13.2vw, 82px) !important; letter-spacing: -.04em; }
+  .section-heading h2,
+  .section-intro h2,
+  .tracks-heading h2,
+  .prizes-copy h2,
+  .registration-copy h2,
+  .contact-cta h2 {
+    font-size: clamp(43px, 9.5vw, 56px) !important;
+    letter-spacing: -.04em !important;
+  }
+  .section-heading > p,
+  .section-intro > .section-lead,
+  .tracks-heading > p,
+  .prizes-copy > p,
+  .registration-copy .section-lead,
+  .contact-cta p,
+  .about-content p,
+  .eligibility-card p,
+  .track-card p,
+  .timeline-main p,
+  .rule-row p,
+  .faq-list details p,
+  .partner-card p,
+  .person-info p,
+  .community-card-copy small,
+  .registration-points,
+  .eligibility-footnote,
+  .people-note { font-size: 17px !important; }
+  .main-nav > a:not(.nav-cta) { font-size: 16px !important; }
+  .nav-cta, .button { font-size: 16px !important; }
+  .eligibility-card h3, .track-card h3, .timeline-main h3,
+  .benefits-heading h3, .partner-card h3, .person-info h3,
+  .community-card-copy strong { font-size: 24px !important; }
+}
+
+/* Desktop precision cursor: soft halo, tracking ring, and tactile click pulse. */
+@media (hover: hover) and (pointer: fine) {
+  body.cursor-ready, body.cursor-ready a, body.cursor-ready button,
+  body.cursor-ready [role="button"], body.cursor-ready summary {
+    cursor: none !important;
+  }
+  body.cursor-ready input, body.cursor-ready textarea,
+  body.cursor-ready select, body.cursor-ready [contenteditable="true"] {
+    cursor: text !important;
+  }
+  .cursor-target {
+    z-index: 99999 !important;
+    width: 42px !important;
+    height: 42px !important;
+    border: 1.5px solid rgba(238, 161, 202, .95) !important;
+    background: radial-gradient(circle, rgba(255,255,255,.06), rgba(205,91,151,.05) 62%, transparent 70%);
+    box-shadow: 0 0 0 5px rgba(215,120,167,.10), 0 0 24px rgba(215,120,167,.38), inset 0 0 12px rgba(255,255,255,.08);
+    mix-blend-mode: screen;
+    opacity: .94 !important;
+    transition: width .2s ease, height .2s ease, opacity .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    will-change: transform;
+  }
+  .cursor-target:before, .cursor-target:after {
+    background: rgba(246, 195, 221, .72) !important;
+    box-shadow: 0 0 9px rgba(238,161,202,.65) !important;
+  }
+  .cursor-target:before { height: 17px !important; width: 1px !important; }
+  .cursor-target:after { width: 17px !important; height: 1px !important; }
+  .cursor-target i {
+    width: 6px !important; height: 6px !important;
+    background: #fff !important; box-shadow: 0 0 14px #fff, 0 0 24px #e88cb9 !important;
+  }
+  .cursor-target b {
+    position: absolute; inset: -2px; display: block; border: 1px solid rgba(255,255,255,.92);
+    border-radius: 50%; opacity: 0; pointer-events: none;
+  }
+  .cursor-target.cursor-hovering {
+    width: 58px !important; height: 58px !important;
+    border-color: #fff !important;
+    background: rgba(215,120,167,.12);
+    box-shadow: 0 0 0 7px rgba(215,120,167,.12), 0 0 30px rgba(215,120,167,.5);
+  }
+  .cursor-target.cursor-clicked { transform-origin: center; }
+  .cursor-target.cursor-clicked b { animation: cursorClickRipple .48s cubic-bezier(.12,.7,.26,1) both; }
+  .cursor-target.cursor-clicked i { transform: translate(-50%,-50%) scale(1.7); }
+  @keyframes cursorClickRipple {
+    0% { inset: 0; opacity: .95; border-width: 2px; }
+    100% { inset: -34px; opacity: 0; border-width: 1px; }
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  .cursor-target { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor-target, .cursor-target * { animation: none !important; transition: none !important; }
+}

@@ -81,7 +81,7 @@ Mentor, judge and coordinator profile cards are placeholders until approved name
 - Added a dedicated Event Highlights section with animated counters:
   - 110+ teams
   - 200+ registrations
-  - 2K+ impressions
+  - 4K+ impressions
   - 50+ organisations and institutions
 - Added a continuously scrolling ecosystem strip for colleges/universities, student communities, innovation hubs, technology organisations, industry networks and education partners.
 - Individual organisation/institution names and logos can be populated when the confirmed list is provided.

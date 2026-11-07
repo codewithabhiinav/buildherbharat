@@ -1,0 +1,87 @@
+/* Round 1 PPT proposal template resource */
+.round1-template-resource {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  margin-top: 22px;
+  padding: 22px 24px;
+  border: 1px solid rgba(225, 65, 142, .30);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(225,65,142,.10), transparent 42%),
+    linear-gradient(120deg, rgba(13,28,62,.96), rgba(18,18,46,.96));
+  box-shadow: 0 14px 34px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.round1-template-copy { min-width: 0; }
+.round1-template-kicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #f17ab4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+.round1-template-copy h4 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.25;
+}
+.round1-template-copy p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(244,246,255,.76);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.round1-template-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 190px;
+}
+.round1-template-actions .button { justify-content: center; text-align: center; white-space: nowrap; }
+.round1-template-preview {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 38px;
+  color: #f7d6e7;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.round1-template-preview:hover { color: #fff; transform: translateY(-1px); }
+@media(max-width:720px) {
+  .round1-template-resource {
+    grid-template-columns: 1fr;
+    gap: 17px;
+    padding: 19px;
+  }
+  .round1-template-actions { min-width: 0; }
+  .round1-template-actions .button { width: 100%; }
+}
+
+
+/* Official Round 1 rules and guidelines resource */
+.round1-guidelines-resource {
+  border-color: rgba(48, 205, 210, .30);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(40,205,210,.10), transparent 42%),
+    linear-gradient(120deg, rgba(8,31,58,.97), rgba(16,24,48,.97));
+}
+.round1-guidelines-resource .round1-template-kicker {
+  color: #66dce0;
+}
+.round1-guidelines-resource .round1-template-copy h4 {
+  color: #f5ffff;
+}
+.round1-guidelines-resource .round1-template-preview {
+  color: #a8eff0;
+}
+.round1-guidelines-resource .round1-template-preview:hover {
+  color: #fff;
+}

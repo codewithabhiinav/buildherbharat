@@ -1,0 +1,28 @@
+
+/* Event highlights page and scrolling institution ecosystem loop */
+.event-highlights-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 5% 15%,rgba(108,67,181,.12),transparent 36%),radial-gradient(ellipse at 95% 85%,rgba(209,68,163,.08),transparent 34%)}
+.event-highlight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
+.event-highlight-card{position:relative;min-height:205px;padding:24px 21px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.13);background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.02));transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.event-highlight-card:after{content:"";position:absolute;width:150px;height:150px;right:-80px;bottom:-90px;border-radius:50%;background:rgba(181,105,241,.13);filter:blur(8px)}
+.event-highlight-card:hover{transform:translateY(-6px);border-color:rgba(201,132,255,.48);box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.event-highlight-label{display:block;font-size:9px;letter-spacing:.16em;font-weight:800;color:#d4a5f4}
+.event-highlight-card strong{display:flex;align-items:baseline;gap:3px;margin:20px 0 4px;font-size:clamp(37px,4vw,54px);line-height:1;letter-spacing:-.05em;color:#fff}
+.event-highlight-card strong span{background:linear-gradient(100deg,#fff,#d9a5ff 75%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.event-highlight-card strong i{font-size:.55em;font-style:normal;color:#d69aff}
+.event-highlight-card p{font-size:15px;font-weight:700;margin:0;color:rgba(255,255,255,.92)}
+.event-highlight-foot{display:block;margin-top:13px;font-size:10px;line-height:1.5;color:rgba(255,255,255,.52)}
+.institution-loop-wrap{margin-top:46px;padding:clamp(22px,4vw,34px) 0 0;border-top:1px solid rgba(255,255,255,.1)}
+.institution-loop-heading{text-align:center;margin-bottom:22px}
+.institution-loop-heading h3{font-size:clamp(22px,3vw,31px);margin:8px 0}
+.institution-loop-heading h3 em{font-style:normal;color:#d9a1ff}
+.institution-loop-heading p{font-size:13px;color:rgba(255,255,255,.61);margin:0}
+.institution-loop{overflow:hidden;position:relative;padding:15px 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.institution-loop-track{width:max-content;display:flex;align-items:center;gap:30px;animation:institution-marquee 36s linear infinite}
+.institution-loop:hover .institution-loop-track{animation-play-state:paused}
+.institution-loop-track span{white-space:nowrap;font-size:11px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.72)}
+.institution-loop-track b{font-size:13px;color:#c58bf0}
+.institution-loop-note{text-align:center;margin:13px 0 0;font-size:10px;line-height:1.5;color:rgba(255,255,255,.42)}
+@keyframes institution-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:900px){.event-highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.event-highlight-grid{gap:10px}.event-highlight-card{min-height:175px;padding:18px 15px}.event-highlight-card strong{font-size:39px}.event-highlight-card p{font-size:13px}.institution-loop-track{gap:22px}}
+@media(prefers-reduced-motion:reduce){.institution-loop-track{animation:none}}

@@ -1,0 +1,73 @@
+/* Priya organiser card + balanced three-person organiser layout */
+.avatar-priya{background:radial-gradient(circle at 40% 30%,#d04f9c99,#48204f99 60%,#0e1324);border-color:#f18aca77}
+.avatar-priya:before,.avatar-priya:after{border-color:#f18aca66}
+.avatar-priya span{text-shadow:0 0 20px #f18aca}
+.people-grid{max-width:1220px;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.people-grid .person-card{grid-template-columns:1fr;gap:16px;min-width:0}
+.people-grid .person-avatar{min-height:142px}
+.people-grid .person-info{width:100%}
+.people-grid .person-actions{display:flex;flex-wrap:wrap;gap:8px}
+.people-grid .person-action{font-size:11px;padding:8px 10px}
+@media(max-width:980px){.people-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}}
+@media(max-width:620px){.people-grid{grid-template-columns:1fr;max-width:560px}.people-grid .person-card{grid-template-columns:120px minmax(0,1fr);gap:14px}.people-grid .person-avatar{min-height:140px}}
+@media(max-width:420px){.people-grid .person-card{grid-template-columns:1fr}.people-grid .person-avatar{min-height:112px}}
+
+
+/* Meet Our Team — clear category headings */
+.team-category-heading{
+  max-width:1220px;
+  margin:30px auto 18px;
+  padding:0 0 13px;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  border-bottom:1px solid rgba(255,255,255,.13);
+}
+.team-category-heading>span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  border:1px solid rgba(132,220,255,.38);
+  border-radius:10px;
+  color:#8de8ff;
+  background:rgba(91,190,255,.08);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+.team-category-heading h3{
+  margin:0;
+  color:#fff;
+  font-size:clamp(20px,2.2vw,27px);
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:-.025em;
+}
+.team-category-heading-volunteers{
+  margin-top:35px;
+}
+@media(max-width:620px){
+  .team-category-heading{margin:24px auto 15px;padding-bottom:11px}
+  .team-category-heading>span{width:30px;height:30px;flex-basis:30px}
+}
+
+/* Priya's supplied profile photo */
+.person-avatar.avatar-priya{position:relative;overflow:hidden;padding:0;min-height:142px}
+.person-avatar.avatar-priya .person-profile-photo{display:block;width:100%;height:100%;min-height:142px;object-fit:cover;object-position:center 28%;border-radius:inherit}
+.person-avatar.avatar-priya small{position:absolute;left:10px;bottom:10px;padding:4px 8px;border-radius:5px;background:rgba(10,12,20,.78);color:#fff;font-size:9px;letter-spacing:.08em}
+
+/* Shared profile-photo treatment for organiser cards */
+.person-avatar .person-profile-photo{display:block;width:100%;height:100%;min-height:142px;object-fit:cover;object-position:center 28%;border-radius:inherit}
+.person-avatar.avatar-sonam{position:relative;overflow:hidden;padding:0;min-height:142px}
+.person-avatar.avatar-sonam small{position:absolute;left:10px;bottom:10px;padding:4px 8px;border-radius:5px;background:rgba(10,12,20,.78);color:#fff;font-size:9px;letter-spacing:.08em}
+
+/* Abhinav organiser profile photo */
+.person-avatar.avatar-abhinav{position:relative;overflow:hidden;padding:0;min-height:142px}
+.person-avatar.avatar-abhinav small{position:absolute;left:10px;bottom:10px;padding:4px 8px;border-radius:5px;background:rgba(10,12,20,.78);color:#fff;font-size:9px;letter-spacing:.08em}
+
+/* Abhinav's Instagram profile action */
+.person-action.action-instagram{border-color:rgba(215,120,167,.28);color:#f0c2d8}
+.person-action.action-instagram:hover{border-color:#d778a7;background:rgba(215,120,167,.12);color:#fff}

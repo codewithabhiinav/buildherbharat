@@ -1,0 +1,27 @@
+
+/* Floating BuildHer Bharat soundtrack player */
+.music-player{position:fixed;right:24px;bottom:24px;z-index:9000;display:flex;align-items:center;gap:12px;width:min(365px,calc(100vw - 28px));padding:11px 13px;border:1px solid rgba(74,215,255,.27);border-radius:19px;background:linear-gradient(135deg,rgba(15,20,37,.96),rgba(8,11,21,.96));box-shadow:0 14px 45px rgba(0,0,0,.42),0 0 28px rgba(36,217,255,.09);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);color:#f7f9ff;transition:transform .3s ease,border-color .3s,box-shadow .3s}
+.music-player:hover{transform:translateY(-4px);border-color:rgba(74,215,255,.55);box-shadow:0 18px 52px rgba(0,0,0,.46),0 0 32px rgba(36,217,255,.16)}
+.music-disc{position:relative;display:grid;place-items:center;flex:0 0 45px;width:45px;height:45px;border-radius:50%;background:repeating-radial-gradient(circle at center,#181c2b 0 3px,#30374d 4px 5px,#171b29 6px 8px);border:1px solid #42dfff88;box-shadow:0 0 16px #42dfff30}
+.music-disc:before{content:"";position:absolute;width:13px;height:13px;border-radius:50%;background:linear-gradient(135deg,#25d9ff,#8b5cf6);border:2px solid #dffaff}
+.music-disc span{position:relative;z-index:1;font-size:14px;color:#fff;opacity:.85;transform:translateY(-1px)}
+.music-player.is-playing .music-disc{animation:musicVinylSpin 4.2s linear infinite}
+@keyframes musicVinylSpin{to{transform:rotate(360deg)}}
+.music-player-info{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px}
+.music-player-info strong{font:700 12px/1.25 var(--display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.music-player-info small{display:flex;align-items:center;gap:7px;color:#8fa0bd;font-size:9px;letter-spacing:.4px}
+.music-equalizer{display:inline-flex;align-items:center;gap:2px;height:12px}
+.music-equalizer i{display:block;width:2px;height:4px;border-radius:2px;background:#39dcff}
+.music-player.is-playing .music-equalizer i{animation:musicBars .65s ease-in-out infinite alternate}
+.music-equalizer i:nth-child(2){animation-delay:.16s}.music-equalizer i:nth-child(3){animation-delay:.31s}.music-equalizer i:nth-child(4){animation-delay:.08s}
+@keyframes musicBars{to{height:12px;background:#df65d3}}
+.music-toggle{display:grid;place-items:center;flex:0 0 37px;width:37px;height:37px;border:1px solid #3bdcff99;border-radius:50%;background:linear-gradient(135deg,#1fbbda,#7958e8);color:#fff;cursor:pointer;box-shadow:0 0 18px #35dfff33;transition:transform .2s,filter .2s}
+.music-toggle:hover{transform:scale(1.09);filter:brightness(1.15)}
+.music-pause-icon{display:none;font-weight:900;font-size:15px}
+.music-player.is-playing .music-play-icon{display:none}.music-player.is-playing .music-pause-icon{display:inline}
+.music-volume-wrap{display:flex;align-items:center;gap:5px;color:#8b9bb6;font-size:12px}
+.music-volume-wrap input{width:54px;height:3px;accent-color:#35dfff;cursor:pointer}
+.music-state{font-size:8px;font-weight:900;letter-spacing:1px;color:#8392ac;min-width:20px;text-align:right}
+.music-player.is-playing .music-state{color:#54e6c2}
+@media(max-width:600px){.music-player{right:12px;bottom:12px;width:min(350px,calc(100vw - 24px));gap:9px;padding:9px 10px;border-radius:16px}.music-disc{width:39px;height:39px;flex-basis:39px}.music-player-info strong{font-size:11px}.music-player-info small{font-size:8px}.music-volume-wrap input{width:43px}.music-toggle{width:34px;height:34px;flex-basis:34px}}
+@media(prefers-reduced-motion:reduce){.music-player,.music-toggle{transition:none}.music-player.is-playing .music-disc,.music-player.is-playing .music-equalizer i{animation:none!important}}

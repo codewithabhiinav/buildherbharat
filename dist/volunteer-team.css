@@ -1,0 +1,26 @@
+
+/* Dedicated volunteer team and one-page task board */
+.volunteer-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 8% 25%,rgba(105,66,180,.09),transparent 38%)}
+.volunteer-count-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 30px}
+.volunteer-count-strip>div{padding:18px 20px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.035);display:flex;align-items:center;gap:13px}
+.volunteer-count-strip strong{font-size:30px;line-height:1;color:#e7b8ff}
+.volunteer-count-strip span{font-size:12px;color:rgba(255,255,255,.66);letter-spacing:.03em}
+.volunteer-role-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.volunteer-role-card{padding:24px;border-radius:19px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.volunteer-role-card:hover{transform:translateY(-5px);border-color:rgba(200,129,255,.5);box-shadow:0 15px 40px rgba(0,0,0,.2)}
+.volunteer-role-wide{grid-column:1/-1}
+.volunteer-role-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.volunteer-role-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:rgba(191,109,247,.13);border:1px solid rgba(212,155,255,.24);color:#f0c8ff;font-size:21px}
+.volunteer-count{font-size:10px;letter-spacing:.14em;color:#e6b8ff;font-weight:800}
+.volunteer-role-card h3{font-size:21px;margin:0 0 9px}
+.volunteer-role-card p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.67);margin:0}
+.volunteer-task{display:flex;flex-direction:column;gap:6px;padding-top:16px;margin-top:17px;border-top:1px solid rgba(255,255,255,.1)}
+.volunteer-task b{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#c991f4}
+.volunteer-task span{font-size:12px;line-height:1.55;color:rgba(255,255,255,.8)}
+.volunteer-task-board{margin-top:26px;padding:clamp(22px,4vw,34px);display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center;border-radius:22px;border:1px solid rgba(201,137,255,.27);background:linear-gradient(120deg,rgba(95,54,144,.2),rgba(16,23,39,.75))}
+.volunteer-task-board h3{font-size:clamp(22px,3vw,30px);margin:8px 0}
+.volunteer-task-board p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.68);margin:0;max-width:650px}
+.volunteer-task-points{display:grid;gap:12px}
+.volunteer-task-points span{display:flex;align-items:center;gap:12px;font-size:12px;color:rgba(255,255,255,.83)}
+.volunteer-task-points b{font-size:11px;width:28px;height:28px;display:grid;place-items:center;border-radius:50%;color:#f0c7ff;background:rgba(194,123,245,.15);border:1px solid rgba(215,162,255,.28)}
+@media(max-width:700px){.volunteer-count-strip{grid-template-columns:1fr;gap:9px}.volunteer-count-strip>div{padding:13px 16px}.volunteer-role-grid{grid-template-columns:1fr}.volunteer-role-wide{grid-column:auto}.volunteer-task-board{grid-template-columns:1fr;gap:19px}}

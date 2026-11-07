@@ -1,0 +1,87 @@
+/* Official Round 3 Grand Finale rules and guidelines resource */
+.round3-guide-resource {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid rgba(238, 126, 176, .32);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(232, 89, 151, .13), transparent 42%),
+    linear-gradient(120deg, rgba(21, 20, 53, .98), rgba(31, 19, 47, .98));
+  box-shadow: 0 14px 34px rgba(0,0,0,.14), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.round3-guide-copy { min-width: 0; }
+.round3-guide-kicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #f18ab8;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+.round3-guide-copy h4 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.25;
+}
+.round3-guide-copy p {
+  max-width: 700px;
+  margin: 0;
+  color: rgba(246, 241, 251, .78);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.round3-guide-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+}
+.round3-guide-points span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 9px;
+  border: 1px solid rgba(238,126,176,.24);
+  border-radius: 999px;
+  color: #f7c7dd;
+  background: rgba(218,91,151,.09);
+  font-size: 11px;
+  font-weight: 700;
+}
+.round3-guide-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 190px;
+}
+.round3-guide-actions .button {
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.round3-guide-preview {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 38px;
+  color: #f5bfd7;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.round3-guide-preview:hover { color: #fff; transform: translateY(-1px); }
+@media(max-width:720px) {
+  .round3-guide-resource {
+    grid-template-columns: 1fr;
+    gap: 17px;
+    padding: 19px;
+  }
+  .round3-guide-actions { min-width: 0; }
+  .round3-guide-actions .button { width: 100%; }
+}

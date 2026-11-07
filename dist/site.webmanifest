@@ -1,0 +1,22 @@
+{
+  "name": "BuildHer Bharat 2026",
+  "short_name": "BuildHer Bharat",
+  "description": "A free girls-only innovation hackathon in India, organised by Shenfinity.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07152e",
+  "theme_color": "#07152e",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

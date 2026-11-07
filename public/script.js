@@ -246,6 +246,7 @@
   // Count-up: ordinary facts animate once; the prize pool loops while visible.
   const countupNodes = [...document.querySelectorAll('[data-countup]')];
   const formatCount = (value, format) => {
+    if (format === 'plain') return String(Math.round(value));
     if (format === 'compact') {
       if (value >= 1000) return `${Math.round(value / 1000)}K`;
       return String(value);

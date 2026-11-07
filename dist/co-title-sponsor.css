@@ -1,0 +1,139 @@
+/* Nexora Entertainments — featured Co-Title Sponsor */
+.co-title-sponsor-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 360px);
+  align-items: center;
+  gap: clamp(25px, 5vw, 66px);
+  width: min(100%, 1080px);
+  min-height: 290px;
+  margin: 0 auto 42px;
+  padding: clamp(28px, 4vw, 48px);
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(211, 168, 89, .48);
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 100% 50%, rgba(211,168,89,.14), transparent 43%),
+    linear-gradient(115deg, #17131a 0%, #211a1d 50%, #121116 100%);
+  box-shadow: 0 22px 55px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.06);
+}
+.co-title-sponsor-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -55%;
+  right: -10%;
+  width: 58%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(225,189,120,.16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 24px rgba(225,189,120,.025), 0 0 0 52px rgba(225,189,120,.02);
+}
+.co-title-sponsor-card::after {
+  content: "CO-TITLE";
+  position: absolute;
+  z-index: -1;
+  right: 27%;
+  bottom: -34px;
+  color: rgba(228,190,122,.045);
+  font: 800 clamp(64px,10vw,120px)/1 "Space Grotesk",sans-serif;
+  letter-spacing: .08em;
+  pointer-events: none;
+}
+.co-title-sponsor-copy { position: relative; z-index: 1; }
+.co-title-sponsor-overline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e8c98c;
+  font: 800 11px/1.5 Inter,sans-serif;
+  letter-spacing: 2.1px;
+}
+.co-title-sponsor-overline i {
+  display: inline-block;
+  width: 22px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d6b36d);
+}
+.co-title-sponsor-overline i:last-child { transform: rotate(180deg); }
+.co-title-sponsor-copy h3 {
+  max-width: 600px;
+  margin: 19px 0 13px;
+  color: #fff7e8;
+  font: 700 clamp(28px,3.4vw,42px)/1.13 "Space Grotesk",sans-serif;
+  letter-spacing: -.035em;
+}
+.co-title-sponsor-copy h3 em {
+  display: block;
+  margin-top: 5px;
+  color: #e6c37d;
+  font-style: normal;
+}
+.co-title-sponsor-copy p {
+  max-width: 560px;
+  margin: 0;
+  color: #d0c2b4;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.co-title-sponsor-caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 23px;
+  padding: 8px 12px;
+  border: 1px solid rgba(220,184,112,.34);
+  border-radius: 999px;
+  color: #e7cb91;
+  background: rgba(220,184,112,.075);
+  font: 800 10px/1.4 Inter,sans-serif;
+  letter-spacing: 1.25px;
+}
+.co-title-sponsor-caption::before {
+  content: "✦";
+  color: #f0d89e;
+  font-size: 12px;
+}
+.co-title-sponsor-logo-wrap {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  max-width: 340px;
+  justify-self: end;
+  place-items: center;
+  padding: 8px;
+  border: 1px solid rgba(224,190,130,.35);
+  border-radius: 18px;
+  background: #080808;
+  box-shadow: 0 18px 38px rgba(0,0,0,.38), 0 0 32px rgba(211,168,89,.10);
+}
+.co-title-sponsor-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  object-fit: contain;
+}
+@media (max-width: 760px) {
+  .co-title-sponsor-card {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-bottom: 32px;
+    padding: 25px;
+    border-radius: 18px;
+  }
+  .co-title-sponsor-logo-wrap {
+    width: min(100%, 330px);
+    justify-self: center;
+    order: -1;
+  }
+  .co-title-sponsor-copy { text-align: center; }
+  .co-title-sponsor-overline { justify-content: center; }
+  .co-title-sponsor-copy h3 { margin-top: 14px; font-size: clamp(27px,7vw,36px); }
+  .co-title-sponsor-copy p { margin-inline: auto; font-size: 16px; }
+  .co-title-sponsor-caption { margin-top: 17px; }
+  .co-title-sponsor-card::after { right: 2%; bottom: 6px; font-size: 66px; }
+}
