@@ -1,0 +1,25 @@
+/* Digimation Flight — Career Acceleration Partner card */
+.partner-card.partner-career-acceleration {
+  border-color: rgba(218, 178, 79, .34);
+  background:
+    radial-gradient(circle at 50% 8%, rgba(218,178,79,.09), transparent 46%),
+    linear-gradient(145deg, #211b23, #17131a);
+}
+.partner-card.partner-career-acceleration .org-overline {
+  color: #e7c66f;
+}
+.partner-card.partner-career-acceleration .digimation-flight-logo {
+  width: min(100%, 132px);
+  height: 112px;
+  padding: 5px;
+  object-fit: contain;
+  background: #000;
+  border: 1px solid rgba(218,178,79,.28);
+  border-radius: 10px;
+}
+.partner-card.partner-career-acceleration h3 {
+  color: #fff5d9;
+}
+.partner-card.partner-career-acceleration p {
+  color: #cdbf9e;
+}

@@ -1,0 +1,20 @@
+
+/* Contact us and partner with us email panel */
+.email-contact-panel{grid-column:1/-1;margin-top:22px;padding:24px;border:1px solid rgba(92,210,255,.22);border-radius:20px;background:linear-gradient(145deg,rgba(17,24,43,.9),rgba(9,13,25,.94));box-shadow:0 18px 48px rgba(0,0,0,.2);position:relative;overflow:hidden}
+.email-contact-panel:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(#25d9ff,#8b5cf6,#ec4bc3)}
+.email-contact-heading h3{margin:5px 0 8px;font:700 clamp(23px,2.5vw,31px)/1.2 var(--display);color:#f7f9ff}
+.email-contact-heading h3 span{color:#42dfff}
+.email-contact-heading p{margin:0 0 18px;color:#a8b6ce;font-size:13px;line-height:1.7}
+.email-contact-kicker{font-size:9px;font-weight:900;letter-spacing:2px;color:#42dfff}
+.email-contact-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.email-contact-list a{display:flex;align-items:center;gap:11px;min-width:0;padding:12px;border:1px solid rgba(151,169,215,.14);border-radius:12px;background:rgba(255,255,255,.035);transition:transform .25s,border-color .25s,background .25s}
+.email-contact-list a:hover{transform:translateY(-3px);border-color:#42dfff88;background:rgba(36,217,255,.07)}
+.email-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#147eaa,#7453d9);color:white;font-size:16px}
+.email-contact-list a>span:nth-child(2){display:flex;flex-direction:column;min-width:0}
+.email-contact-list small{color:#8294b3;font-size:9px;text-transform:uppercase;letter-spacing:1px;font-weight:800}
+.email-contact-list strong{color:#eaf4ff;font-size:12px;overflow-wrap:anywhere}
+.email-contact-list b{margin-left:auto;color:#42dfff;font-size:17px}
+.email-partner-cta{display:inline-flex;align-items:center;gap:12px;margin-top:16px;padding:12px 19px;border-radius:999px;background:linear-gradient(100deg,#21c6e9,#7755e8);color:white;font-size:12px;font-weight:900;box-shadow:0 8px 26px rgba(36,217,255,.17);transition:transform .25s,box-shadow .25s}
+.email-partner-cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(36,217,255,.3)}
+@media(max-width:620px){.email-contact-panel{padding:18px}.email-contact-list{grid-template-columns:1fr}.email-contact-list strong{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.email-contact-list a,.email-partner-cta{transition:none}}

@@ -1,0 +1,107 @@
+/* ASI:ONE Ghaziabad — Powered By sponsor feature */
+.powered-by-sponsor-card {
+  position: relative;
+  display: flex;
+  width: min(100%, 850px);
+  min-height: 190px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto 36px;
+  padding: 26px 32px;
+  overflow: hidden;
+  border: 1px solid rgba(214,178,132,.24);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 100% 50%, rgba(214,178,132,.11), transparent 43%),
+    linear-gradient(110deg,#211b24 0%,#17131b 60%,#211a20 100%);
+  box-shadow: 0 16px 42px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.powered-by-sponsor-card::before {
+  content:"";
+  position:absolute;
+  top:-80px;
+  right:145px;
+  width:260px;
+  height:260px;
+  border:1px solid rgba(232,196,151,.10);
+  border-radius:50%;
+  box-shadow:0 0 0 20px rgba(232,196,151,.025),0 0 0 44px rgba(232,196,151,.018);
+  pointer-events:none;
+}
+.powered-by-sponsor-copy { position:relative; z-index:1; flex:1; min-width:0; }
+.powered-by-overline {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#e1c39a;
+  font:800 11px/1.4 Inter,sans-serif;
+  letter-spacing:2.2px;
+}
+.powered-by-overline i {
+  width:20px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#d9b98e);
+}
+.powered-by-overline i:last-child { transform:rotate(180deg); }
+.powered-by-sponsor-copy h3 {
+  margin:12px 0 7px;
+  color:#fff;
+  font:800 clamp(27px,3vw,36px)/1.12 "Space Grotesk",sans-serif;
+  letter-spacing:-.025em;
+}
+.powered-by-sponsor-copy h3 em {
+  color:#e5c99f;
+  font-style:normal;
+}
+.powered-by-sponsor-copy p {
+  max-width:550px;
+  margin:0;
+  color:#cbbfca;
+  font-size:16px;
+  line-height:1.7;
+}
+.powered-by-logo-wrap {
+  position:relative;
+  z-index:1;
+  display:grid;
+  width:150px;
+  height:150px;
+  flex:0 0 150px;
+  place-items:center;
+  padding:10px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.72);
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 12px 26px rgba(0,0,0,.23);
+}
+.powered-by-logo {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:6px;
+}
+.powered-by-caption {
+  position:absolute;
+  right:32px;
+  bottom:12px;
+  color:rgba(232,204,168,.72);
+  font:800 8px/1.4 Inter,sans-serif;
+  letter-spacing:1.35px;
+}
+@media(max-width:650px) {
+  .powered-by-sponsor-card {
+    flex-direction:column-reverse;
+    align-items:center;
+    gap:20px;
+    padding:23px 20px 36px;
+    text-align:center;
+  }
+  .powered-by-sponsor-copy h3 { font-size:29px; }
+  .powered-by-sponsor-copy p { font-size:15px; }
+  .powered-by-overline { justify-content:center; }
+  .powered-by-logo-wrap { width:132px;height:132px;flex-basis:132px; }
+  .powered-by-caption { right:0;left:0;bottom:12px;text-align:center;font-size:7px; }
+}

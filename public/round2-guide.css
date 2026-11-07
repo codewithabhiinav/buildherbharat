@@ -1,0 +1,87 @@
+/* Official Round 2 mentor meeting and prototype presentation guide */
+.round2-guide-resource {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid rgba(57, 168, 255, .28);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(37, 129, 226, .14), transparent 42%),
+    linear-gradient(120deg, rgba(8, 25, 56, .97), rgba(15, 24, 48, .97));
+  box-shadow: 0 14px 34px rgba(0,0,0,.14), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.round2-guide-copy { min-width: 0; }
+.round2-guide-kicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #67c8ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+.round2-guide-copy h4 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.25;
+}
+.round2-guide-copy p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(244,246,255,.76);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.round2-guide-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+}
+.round2-guide-points span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 9px;
+  border: 1px solid rgba(77,184,249,.23);
+  border-radius: 999px;
+  color: #bce7ff;
+  background: rgba(45,145,222,.09);
+  font-size: 11px;
+  font-weight: 700;
+}
+.round2-guide-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 190px;
+}
+.round2-guide-actions .button {
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.round2-guide-preview {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 38px;
+  color: #bce7ff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.round2-guide-preview:hover { color: #fff; transform: translateY(-1px); }
+@media(max-width:720px) {
+  .round2-guide-resource {
+    grid-template-columns: 1fr;
+    gap: 17px;
+    padding: 19px;
+  }
+  .round2-guide-actions { min-width: 0; }
+  .round2-guide-actions .button { width: 100%; }
+}
