@@ -243,7 +243,7 @@
   updateRegistrationCountdown();
   window.setInterval(updateRegistrationCountdown, 1000);
 
-  // Count-up: ordinary facts animate once; the prize pool loops while visible.
+  // Count-up metrics animate once when they enter the viewport.
   const countupNodes = [...document.querySelectorAll('[data-countup]')];
   const formatCount = (value, format) => {
     if (format === 'plain') return String(Math.round(value));
@@ -253,12 +253,13 @@
     }
     return Math.round(value).toLocaleString('en-IN');
   };
-  const runCount = (node, force = false) => {
-    if (node.dataset.counted === 'true' && !force) return;
+  const runCount = (node) => {
+    if (node.dataset.counted === 'true') return;
     node.dataset.counted = 'true';
     const target = Number(node.dataset.countup || 0);
     const duration = prefersReducedMotion ? 0 : 2200;
     if (!duration) { node.textContent = formatCount(target, node.dataset.countFormat); return; }
+    node.textContent = formatCount(0, node.dataset.countFormat);
     const startValue = performance.now();
     const tick = (now) => {
       const progress = Math.min(1, (now - startValue) / duration);
@@ -268,73 +269,15 @@
     };
     window.requestAnimationFrame(tick);
   };
-  const prizeSection = document.querySelector('#prizes');
-  const prizeNodes = prizeSection ? [...prizeSection.querySelectorAll('[data-countup]')] : [];
-  const loopNodes = countupNodes.filter((node) => node.dataset.countLoop === 'true');
-  const regularNodes = countupNodes.filter((node) => !prizeSection?.contains(node) && !loopNodes.includes(node));
   const observeOnce = (nodes) => {
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => { if (entry.isIntersecting) { runCount(entry.target); obs.unobserve(entry.target); } });
-      }, { threshold: 0.55 });
+      }, { threshold: 0.35 });
       nodes.forEach((node) => observer.observe(node));
     } else nodes.forEach((node) => runCount(node));
   };
-  observeOnce(regularNodes);
-
-  // Event highlight metrics count from zero and repeat while the section is visible.
-  if (loopNodes.length) {
-    let highlightsVisible = false;
-    let highlightsLoopTimer = null;
-    const animateHighlights = () => {
-      loopNodes.forEach((node) => {
-        node.textContent = '0';
-        node.dataset.counted = 'false';
-        runCount(node, true);
-      });
-    };
-    if ('IntersectionObserver' in window) {
-      const highlightsObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          highlightsVisible = entry.isIntersecting;
-          if (highlightsVisible && !prefersReducedMotion) {
-            animateHighlights();
-            if (!highlightsLoopTimer) {
-              highlightsLoopTimer = window.setInterval(() => {
-                if (highlightsVisible) animateHighlights();
-              }, 6500);
-            }
-          } else if (!highlightsVisible && highlightsLoopTimer) {
-            window.clearInterval(highlightsLoopTimer);
-            highlightsLoopTimer = null;
-          }
-        });
-      }, { threshold: 0.35 });
-      const highlightsSection = document.querySelector('#highlights');
-      if (highlightsSection) highlightsObserver.observe(highlightsSection);
-    } else {
-      animateHighlights();
-    }
-  }
-  if (prizeNodes.length) {
-    let prizeVisible = false;
-    let prizeLoopTimer = null;
-    const animatePrizeSet = () => { prizeNodes.forEach((node) => { node.textContent = '0'; node.dataset.counted = 'false'; runCount(node, true); }); };
-    if ('IntersectionObserver' in window) {
-      const prizeObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          prizeVisible = entry.isIntersecting;
-          if (prizeVisible && !prefersReducedMotion) {
-            animatePrizeSet();
-            if (!prizeLoopTimer) prizeLoopTimer = window.setInterval(() => { if (prizeVisible) animatePrizeSet(); }, 6500);
-          } else if (!prizeVisible && prizeLoopTimer) {
-            window.clearInterval(prizeLoopTimer); prizeLoopTimer = null;
-          }
-        });
-      }, { threshold: 0.35 });
-      prizeObserver.observe(prizeSection);
-    } else observeOnce(prizeNodes);
-  }
+  observeOnce(countupNodes);
 
   // Cursor aura + logo parallax. The sponsor marks subtly follow the pointer
   // inside their own cards without moving their underlying layout.

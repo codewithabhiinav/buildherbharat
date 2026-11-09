@@ -26,3 +26,48 @@
 @media(max-width:900px){.event-highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.event-highlight-grid{gap:10px}.event-highlight-card{min-height:175px;padding:18px 15px}.event-highlight-card strong{font-size:39px}.event-highlight-card p{font-size:13px}.institution-loop-track{gap:22px}}
 @media(prefers-reduced-motion:reduce){.institution-loop-track{animation:none}}
+
+.event-highlight-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.event-highlight-card{min-height:220px}
+.event-highlight-prize{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:clamp(18px,4vw,36px);min-height:230px;padding:clamp(25px,5vw,42px);border-color:#e4be5c88;background:radial-gradient(ellipse at 18% 50%,#d4a63820,transparent 52%),linear-gradient(135deg,#211b2b,#10131d 68%);box-shadow:inset 0 1px #fff2,0 16px 48px #c79b3714}
+.event-highlight-prize:after{width:230px;height:230px;right:-110px;bottom:-130px;background:#d4a63825}
+.event-highlight-prize .event-highlight-label{color:#f2d57c;font-size:11px}
+.event-highlight-prize strong{margin:12px 0 5px;font-size:clamp(48px,8vw,88px);letter-spacing:-.06em;text-shadow:0 0 30px #f0c64c2e}
+.event-highlight-prize strong span{background:linear-gradient(100deg,#fff4c4,#f2cf66 58%,#fff0ad);background-clip:text;-webkit-background-clip:text;color:transparent}
+.event-highlight-prize strong i{color:#f2cf66}
+.event-highlight-prize .event-highlight-foot{margin-top:5px;color:#d4c8a9;font-size:12px}
+.event-highlight-icon{position:relative;z-index:1;display:grid;place-items:center;width:58px;height:58px;border:1px solid currentColor;border-radius:16px;background:#ffffff0b}
+.event-highlight-icon svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.event-highlight-icon-trophy{width:88px;height:88px;border-radius:24px;color:#f1ce67;background:linear-gradient(145deg,#f1ce6726,#f1ce6708);box-shadow:0 0 34px #e6b94430,inset 0 1px #fff3}
+.event-highlight-icon-trophy svg{width:45px;height:45px;fill:currentColor;stroke:none;filter:drop-shadow(0 0 11px #ffd85c88)}
+.event-highlight-cash{border-color:#d6a64c55;background:linear-gradient(145deg,#181923,#11131d)}
+.event-highlight-cash .event-highlight-label,.event-highlight-cash strong i{color:#edc76c}
+.event-highlight-icon-cash{color:#edc76c;background:#d6a64c12}
+.event-highlight-reach{border-color:#bd78d955;background:linear-gradient(145deg,#1c1727,#11131d)}
+.event-highlight-icon-reach{color:#e89bdb;background:#bd78d914}
+.event-highlight-cash .event-highlight-icon,.event-highlight-reach .event-highlight-icon{position:absolute;top:17px;right:17px;width:42px;height:42px;border-radius:12px}
+.event-highlight-cash .event-highlight-icon svg,.event-highlight-reach .event-highlight-icon svg{width:22px;height:22px}
+.event-highlight-context{display:block;margin-top:8px;color:rgba(255,255,255,.62);font-size:10px;line-height:1.5}
+.hero-prize-highlight{position:relative;isolation:isolate;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:15px;margin:17px 0 7px;padding:15px 17px;overflow:hidden;border:1px solid #d5ab4d88;border-radius:13px;background:linear-gradient(110deg,#fff6e8,#f5e8ed 58%,#f3e5ee);box-shadow:0 10px 28px #d2a53c24,inset 0 1px #fff}
+.hero-prize-highlight:after{position:absolute;z-index:-1;inset:-40% auto -40% -50%;width:35%;content:"";transform:skewX(-20deg);background:linear-gradient(90deg,transparent,#fff9,transparent);animation:prizeShine 7s ease-in-out infinite}
+.hero-prize-trophy{display:grid;place-items:center;width:54px;height:54px;border:1px solid #d8b04e77;border-radius:15px;color:#a97714;background:linear-gradient(145deg,#fff2bd,#e8bd51);box-shadow:0 0 25px #dbad3f55}
+.hero-prize-trophy svg{width:31px;height:31px;fill:currentColor;filter:drop-shadow(0 2px 3px #8f641733)}
+.hero-prize-copy{display:flex;flex-direction:column;min-width:0}
+.hero-prize-kicker{font-size:8px;font-weight:900;letter-spacing:.13em;color:#876326}
+.hero-prize-copy strong{display:flex;align-items:baseline;gap:4px;margin:0;color:#6e4a0b;font:800 clamp(30px,4.4vw,46px)/1.08 var(--display);letter-spacing:-.045em;font-variant-numeric:tabular-nums;text-shadow:0 2px 15px #c9983533}
+.hero-prize-label{margin-top:3px;color:#795a2d;font-size:8px;font-weight:900;letter-spacing:.07em}
+.hero-event-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fact-prize-pool strong{font-size:clamp(22px,3vw,35px);background:linear-gradient(90deg,#ffe28a,#c99734);background-clip:text;-webkit-background-clip:text;color:transparent}
+.fact-prize-pool span{color:#d8bf82}
+.prize-total-overall{border-left-color:#d8b14d;background:radial-gradient(ellipse at 5% 50%,#d6a63822,transparent 75%)}
+.prize-total-overall>span:first-child{color:#e8c66c}
+.prize-total-overall strong{color:#f1d276;text-shadow:0 0 24px #d4a43855}
+.prize-total-overall .prize-trophy-mark{display:inline-grid;place-items:center;width:32px;height:32px;margin:0 0 10px;color:#f1d276}
+.prize-total-overall .prize-trophy-mark svg{width:29px;height:29px;fill:currentColor;filter:drop-shadow(0 0 9px #e8c25488)}
+.prize-total-cash{margin-top:15px;border-left-color:#ca78bd;background:radial-gradient(ellipse at 5% 50%,#bd63b522,transparent 75%)}
+.prize-total-cash>span:first-child{color:#e49ad9}
+.prize-total-cash strong{color:#f3c1e8;text-shadow:0 0 20px #c064b944}
+@keyframes prizeShine{0%,72%,100%{left:-50%}85%{left:130%}}
+@media(max-width:900px){.event-highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.event-highlight-grid{grid-template-columns:minmax(0,1fr)}.event-highlight-prize{grid-template-columns:auto 1fr;gap:13px;padding:22px 18px;min-height:190px}.event-highlight-icon-trophy{width:62px;height:62px;border-radius:18px}.event-highlight-icon-trophy svg{width:34px;height:34px}.event-highlight-prize strong{font-size:clamp(42px,11vw,62px)}.event-highlight-card{min-height:190px}.hero-prize-highlight{gap:11px;padding:13px}.hero-prize-trophy{width:46px;height:46px}.hero-prize-copy strong{font-size:clamp(28px,8vw,38px)}.hero-prize-label{font-size:7px;letter-spacing:.04em}}
+@media(prefers-reduced-motion:reduce){.hero-prize-highlight:after{animation:none}.event-highlight-card{transition:none}.event-highlight-card:hover{transform:none}}
