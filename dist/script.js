@@ -243,9 +243,10 @@
   updateRegistrationCountdown();
   window.setInterval(updateRegistrationCountdown, 1000);
 
-  // Count-up: ordinary facts animate once; the prize pool loops while visible.
+  // Count-up metrics animate when they enter the viewport.
   const countupNodes = [...document.querySelectorAll('[data-countup]')];
   const formatCount = (value, format) => {
+    if (format === 'plain') return String(Math.round(value));
     if (format === 'compact') {
       if (value >= 1000) return `${Math.round(value / 1000)}K`;
       return String(value);
@@ -258,6 +259,7 @@
     const target = Number(node.dataset.countup || 0);
     const duration = prefersReducedMotion ? 0 : 2200;
     if (!duration) { node.textContent = formatCount(target, node.dataset.countFormat); return; }
+    node.textContent = formatCount(0, node.dataset.countFormat);
     const startValue = performance.now();
     const tick = (now) => {
       const progress = Math.min(1, (now - startValue) / duration);
@@ -267,73 +269,57 @@
     };
     window.requestAnimationFrame(tick);
   };
+  const highlightsSection = document.querySelector('#highlights');
+  const highlightsNodes = highlightsSection
+    ? [...highlightsSection.querySelectorAll('[data-countup]')]
+    : [];
   const prizeSection = document.querySelector('#prizes');
   const prizeNodes = prizeSection ? [...prizeSection.querySelectorAll('[data-countup]')] : [];
-  const loopNodes = countupNodes.filter((node) => node.dataset.countLoop === 'true');
-  const regularNodes = countupNodes.filter((node) => !prizeSection?.contains(node) && !loopNodes.includes(node));
+  const repeatingNodes = new Set([...highlightsNodes, ...prizeNodes]);
   const observeOnce = (nodes) => {
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => { if (entry.isIntersecting) { runCount(entry.target); obs.unobserve(entry.target); } });
-      }, { threshold: 0.55 });
+      }, { threshold: 0.35 });
       nodes.forEach((node) => observer.observe(node));
     } else nodes.forEach((node) => runCount(node));
   };
-  observeOnce(regularNodes);
-
-  // Event highlight metrics count from zero and repeat while the section is visible.
-  if (loopNodes.length) {
-    let highlightsVisible = false;
-    let highlightsLoopTimer = null;
-    const animateHighlights = () => {
-      loopNodes.forEach((node) => {
+  observeOnce(countupNodes.filter((node) => !repeatingNodes.has(node)));
+  const repeatCountUp = (section, nodes) => {
+    if (!section || !nodes.length) return;
+    let visible = false;
+    let loopTimer = null;
+    const animate = () => {
+      nodes.forEach((node) => {
         node.textContent = '0';
         node.dataset.counted = 'false';
         runCount(node, true);
       });
     };
     if ('IntersectionObserver' in window) {
-      const highlightsObserver = new IntersectionObserver((entries) => {
+      const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          highlightsVisible = entry.isIntersecting;
-          if (highlightsVisible && !prefersReducedMotion) {
-            animateHighlights();
-            if (!highlightsLoopTimer) {
-              highlightsLoopTimer = window.setInterval(() => {
-                if (highlightsVisible) animateHighlights();
+          visible = entry.isIntersecting;
+          if (visible) {
+            animate();
+            if (!prefersReducedMotion && !loopTimer) {
+              loopTimer = window.setInterval(() => {
+                if (visible) animate();
               }, 6500);
             }
-          } else if (!highlightsVisible && highlightsLoopTimer) {
-            window.clearInterval(highlightsLoopTimer);
-            highlightsLoopTimer = null;
+          } else if (loopTimer) {
+            window.clearInterval(loopTimer);
+            loopTimer = null;
           }
         });
       }, { threshold: 0.35 });
-      const highlightsSection = document.querySelector('#highlights');
-      if (highlightsSection) highlightsObserver.observe(highlightsSection);
+      observer.observe(section);
     } else {
-      animateHighlights();
+      animate();
     }
-  }
-  if (prizeNodes.length) {
-    let prizeVisible = false;
-    let prizeLoopTimer = null;
-    const animatePrizeSet = () => { prizeNodes.forEach((node) => { node.textContent = '0'; node.dataset.counted = 'false'; runCount(node, true); }); };
-    if ('IntersectionObserver' in window) {
-      const prizeObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          prizeVisible = entry.isIntersecting;
-          if (prizeVisible && !prefersReducedMotion) {
-            animatePrizeSet();
-            if (!prizeLoopTimer) prizeLoopTimer = window.setInterval(() => { if (prizeVisible) animatePrizeSet(); }, 6500);
-          } else if (!prizeVisible && prizeLoopTimer) {
-            window.clearInterval(prizeLoopTimer); prizeLoopTimer = null;
-          }
-        });
-      }, { threshold: 0.35 });
-      prizeObserver.observe(prizeSection);
-    } else observeOnce(prizeNodes);
-  }
+  };
+  repeatCountUp(highlightsSection, highlightsNodes);
+  repeatCountUp(prizeSection, prizeNodes);
 
   // Cursor aura + logo parallax. The sponsor marks subtly follow the pointer
   // inside their own cards without moving their underlying layout.
