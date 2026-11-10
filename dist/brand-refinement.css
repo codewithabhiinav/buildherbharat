@@ -338,6 +338,28 @@ body{background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;lette
 }
 .volunteer-compact-line div{display:flex;flex-direction:column;gap:3px}
 .volunteer-compact-line strong{color:#fff;font:700 17px var(--display)}
+
+/* Make the three community destinations easy to spot and open. */
+.community-grid{align-items:stretch}
+.community-card{
+  position:relative;overflow:hidden;min-height:210px;padding:24px;
+  border-color:rgba(232,169,201,.28);
+  background:linear-gradient(145deg,#2c202d,#211a27 78%);
+  box-shadow:0 10px 24px rgba(0,0,0,.14)
+}
+.community-card::before{
+  content:"";position:absolute;inset:0 0 auto;height:3px;
+  background:linear-gradient(90deg,#d778a7,#f0bfd7)
+}
+.community-card-featured{order:-1;border-color:rgba(232,169,201,.62);background:linear-gradient(145deg,#3b2635,#241b29 78%);box-shadow:0 12px 30px rgba(179,68,124,.15)}
+.community-card:hover,.community-card:focus-visible{border-color:rgba(232,169,201,.72);box-shadow:0 14px 30px rgba(179,68,124,.16)}
+.community-card:focus-visible{outline:2px solid #f0bfd7;outline-offset:3px}
+.community-card-copy b{
+  width:100%;justify-content:space-between;margin-top:18px;padding:10px 12px;
+  border:1px solid rgba(232,169,201,.28);border-radius:8px;
+  background:rgba(215,120,167,.10);color:#f0bfd7;font-size:11px
+}
+.community-card-featured .community-card-copy b{border-color:rgba(232,169,201,.48);background:rgba(215,120,167,.16);color:#ffd4e7}
 .volunteer-compact-line small{color:#c4b8c7;font-size:12px;line-height:1.6}
 .event-highlight-card{
   border:1px solid rgba(232,169,201,.17)!important;
