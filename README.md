@@ -28,6 +28,7 @@ npm run preview
 - Removed the repetitive Rules section and added useful submission/evaluation guidance to the FAQ.
 - Reduced decorative glow, gradient and motion effects; improved readability and spacing.
 - Kept the event poster, registration QR, sponsor information, three-round guide, sponsorship PDF, team groups, social links and soundtrack.
+- Added the Azure Developer Community as an Associate Partner, featuring the supplied Microsoft Azure support banner.
 
 ## Soundtrack
 The site includes `public/assets/buildher-anthem.mp3` — **Kar Har Maidan Fateh**.

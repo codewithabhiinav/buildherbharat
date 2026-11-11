@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { siteMarkup } from './siteMarkup';
+import { withAzureCommunityPartner } from './azureCommunityPartner';
 
 export default function App() {
   const siteRef = useRef(null);
@@ -8,7 +9,7 @@ export default function App() {
     const mount = siteRef.current;
     if (!mount) return undefined;
 
-    mount.innerHTML = siteMarkup;
+    mount.innerHTML = withAzureCommunityPartner(siteMarkup);
 
     // Load the page interactions only after React has mounted all site controls.
     const script = document.createElement('script');

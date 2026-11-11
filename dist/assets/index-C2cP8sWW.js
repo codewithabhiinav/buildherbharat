@@ -1,16 +1,16 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))p(a);new MutationObserver(a=>{for(const n of a)if(n.type==="childList")for(const l of n.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&p(l)}).observe(document,{childList:!0,subtree:!0});function d(a){const n={};return a.integrity&&(n.integrity=a.integrity),a.referrerPolicy&&(n.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?n.credentials="include":a.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function p(a){if(a.ep)return;a.ep=!0;const n=d(a);fetch(a.href,n)}})();const h=`
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))p(a);new MutationObserver(a=>{for(const e of a)if(e.type==="childList")for(const l of e.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&p(l)}).observe(document,{childList:!0,subtree:!0});function d(a){const e={};return a.integrity&&(e.integrity=a.integrity),a.referrerPolicy&&(e.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?e.credentials="include":a.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function p(a){if(a.ep)return;a.ep=!0;const e=d(a);fetch(a.href,e)}})();const h=`
 <div aria-hidden="true" class="scroll-progress"><span></span></div>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="ambient ambient-three"></div>
 <div class="announcement-bar"><span class="announcement-dot"></span><strong>BUILDHER BHARAT 2026</strong><span class="announcement-separator">/</span><span>Registration is 100% free</span><span class="announcement-separator">/</span><span>Round 1 · 7–15 November</span><a href="#timeline">Explore the journey <span>↗</span></a></div>
 <aside aria-labelledby="mandatory-announcement-title" class="mandatory-announcement">
 <div class="mandatory-announcement-copy">
-<h2 id="mandatory-announcement-title">?? IMPORTANT ANNOUNCEMENT FOR ALL BUILDHER BHARAT TEAM MEMBERS!</h2>
+<h2 id="mandatory-announcement-title">IMPORTANT ANNOUNCEMENT FOR ALL BUILDHER BHARAT TEAM MEMBERS!</h2>
 <p><strong>All team members are required to complete ALL THREE mandatory tasks mentioned on this website.</strong></p>
 <p>These tasks are compulsory for EVERY member, without exception.</p>
 <p>Please complete all registrations and submissions as soon as possible. Do not delay!</p>
 <p>Your cooperation is essential for the successful execution of BuildHer Bharat 2026.</p>
 </div>
-<a class="mandatory-announcement-cta" href="#mandatory-tasks">COMPLETE YOUR MANDATORY TASKS <span aria-hidden="true">?</span></a>
+<a class="mandatory-announcement-cta" href="#mandatory-tasks">COMPLETE YOUR MANDATORY TASKS <span aria-hidden="true">↗</span></a>
 </aside>
 <header class="site-header" id="top">
 <div class="nav-wrap container">
@@ -26,8 +26,8 @@
 <div class="eyebrow"><span class="eyebrow-line"></span> AN ALL-GIRLS INNOVATION HACKATHON <span class="eyebrow-live">2026</span></div>
 <h1><span>BUILDHER</span><em>BHARAT</em><small>2026</small></h1>
 <p class="hero-tagline">Women building the future of India.</p>
-<p class="hero-description">Join a free, inter-college girls-only innovation hackathon in India: teams can have 1-4 members, submit an idea, develop a prototype with mentors, and pitch your solution at the Gurugram Grand Finale.</p>
-<div class="hero-actions"><a class="button button-primary" href="https://unstop.com/p/build-her-bharat-shenfinity-1766366" rel="noopener noreferrer" target="_blank">Register on Unstop <span>↗</span></a><a class="button button-ghost" href="#timeline">Explore the 3 rounds <span>↓</span></a><a class="button mandatory-announcement-cta" href="#mandatory-tasks">COMPLETE YOUR MANDATORY TASKS <span aria-hidden="true">?</span></a></div>
+<p class="hero-description">Join a free, national-level girls-only innovation hackathon in India: teams can have 1-4 members, submit an idea, develop a prototype with mentors, and pitch your solution at the Gurugram Grand Finale.</p>
+<div class="hero-actions"><a class="button button-primary" href="https://unstop.com/p/build-her-bharat-shenfinity-1766366" rel="noopener noreferrer" target="_blank">Register on Unstop <span>↗</span></a><a class="button button-ghost" href="#timeline">Explore the 3 rounds <span>↓</span></a><a class="button mandatory-announcement-cta" href="#mandatory-tasks">COMPLETE YOUR MANDATORY TASKS <span aria-hidden="true">↗</span></a></div>
 <div class="hero-meta"><span>✦ Team size: 1-4 members</span><span>✦ School students</span><span>✦ College &amp; university</span><span>✦ Working professionals</span></div>
 </div>
 <div class="hero-art"><div class="hero-event-card">
@@ -56,7 +56,7 @@
 <div class="container">
 <div class="section-heading centered">
 <div class="eyebrow"><span class="eyebrow-line"></span> MANDATORY TASKS FOR ALL TEAM MEMBERS <span class="eyebrow-line"></span></div>
-<h2 id="mandatory-tasks-title">?? MANDATORY TASKS ? <em>ACTION REQUIRED</em></h2>
+<h2 id="mandatory-tasks-title">MANDATORY TASKS <em>ACTION REQUIRED</em></h2>
 <p>Every member of the BuildHer Bharat team is required to complete all three tasks listed below. These tasks are compulsory for every individual team member. Please complete them as soon as possible.</p>
 </div>
 <div class="mandatory-tasks-grid">
@@ -64,22 +64,22 @@
 <div class="mandatory-task-top"><span class="mandatory-task-number">TASK 01</span><span aria-hidden="true" class="mandatory-task-icon"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 .1.81 2.46 3.28 1.75.1-.73.39-1.23.7-1.51-2.5-.28-5.13-1.25-5.13-5.58 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.99 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.08-1.16 3.08-1.16.61 1.56.23 2.71.11 2.99.72.79 1.16 1.8 1.16 3.03 0 4.34-2.63 5.3-5.14 5.58.4.35.75 1.04.75 2.1v3.27c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg></span></div>
 <h3>GitHub Repository Submission</h3>
 <p>Submit your GitHub repository/profile details through the official form.</p>
-<a class="mandatory-task-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf2Dg_9v4dRL37uWJ2-jQxif54kbB_zo4oxFj54Ui-oV5_fzQ/viewform?usp=sharing&amp;ouid=111794209601167829354" rel="noopener noreferrer" target="_blank">SUBMIT GITHUB DETAILS <span aria-hidden="true">?</span></a>
+<a class="mandatory-task-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf2Dg_9v4dRL37uWJ2-jQxif54kbB_zo4oxFj54Ui-oV5_fzQ/viewform?usp=sharing&amp;ouid=111794209601167829354" rel="noopener noreferrer" target="_blank">SUBMIT GITHUB DETAILS <span aria-hidden="true">↗</span></a>
 </article>
 <article class="mandatory-task-card">
 <div class="mandatory-task-top"><span class="mandatory-task-number">TASK 02</span><span aria-hidden="true" class="mandatory-task-icon asi-one-mark">ASI<small>ONE</small></span></div>
 <h3>ASI One Registration</h3>
 <p>Complete the ASI One registration process using the official registration form.</p>
-<a class="mandatory-task-button" href="https://forms.gle/QYvd867YRd5genYn9" rel="noopener noreferrer" target="_blank">COMPLETE ASI ONE REGISTRATION <span aria-hidden="true">?</span></a>
+<a class="mandatory-task-button" href="https://forms.gle/QYvd867YRd5genYn9" rel="noopener noreferrer" target="_blank">COMPLETE ASI ONE REGISTRATION <span aria-hidden="true">↗</span></a>
 </article>
 <article class="mandatory-task-card">
 <div class="mandatory-task-top"><span class="mandatory-task-number">TASK 03</span><span aria-hidden="true" class="mandatory-task-icon"><span class="microsoft-mark"><i></i><i></i><i></i><i></i></span></span></div>
 <h3>Microsoft Event Registration</h3>
 <p>Register for the official Microsoft event using the registration form.</p>
-<a class="mandatory-task-button" href="https://forms.gle/8k4xm1wB9PjunrDD8" rel="noopener noreferrer" target="_blank">REGISTER FOR MICROSOFT EVENT <span aria-hidden="true">?</span></a>
+<a class="mandatory-task-button" href="https://forms.gle/8k4xm1wB9PjunrDD8" rel="noopener noreferrer" target="_blank">REGISTER FOR MICROSOFT EVENT <span aria-hidden="true">↗</span></a>
 </article>
 </div>
-<div class="mandatory-task-reminder"><p>All three tasks are compulsory for every team member. Complete each official form now.</p><a href="#mandatory-tasks">REVIEW THE THREE TASKS <span aria-hidden="true">?</span></a></div>
+<div class="mandatory-task-reminder"><p>All three tasks are compulsory for every team member. Complete each official form now.</p><a href="#mandatory-tasks">REVIEW THE THREE TASKS <span aria-hidden="true">↗</span></a></div>
 </div>
 </section>
 <section aria-label="Event highlights" class="quick-facts"><div class="container facts-grid"><div class="fact fact-prize-pool"><strong>₹<span data-countup="100000">1,00,000</span></strong><span>TOTAL PRIZE POOL WORTH ₹1,00,000</span></div><div class="fact"><strong>1-4</strong><span>Members per team</span></div><div class="fact"><strong>03</strong><span>Rounds · Idea to finale</span></div><div class="fact"><strong>10</strong><span>Innovation tracks</span></div><div class="fact"><strong>₹0</strong><span>Registration fee</span></div></div></section>
@@ -470,4 +470,12 @@
 </label>
 <span class="music-state" id="music-state">OFF</span>
 </div>
-`,c=document.getElementById("root");if(!c)throw new Error("BuildHer Bharat root element is missing.");let e=c.querySelector(".site-root");e||(e=document.createElement("div"),e.className="site-root",c.appendChild(e));e.hasAttribute("data-prerendered")||(e.innerHTML=h);const r=document.createElement("script");r.src="/script.js";r.async=!1;r.onerror=()=>{const o=e.querySelector("#music-state");o&&(o.textContent="LOAD ERROR");const s=document.getElementById("site-loader");s&&(s.classList.add("loader-hidden"),window.setTimeout(()=>s.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(r);const i=e.querySelector("#site-music"),t=e.querySelector("#music-state");i&&t&&(i.addEventListener("error",()=>{t.textContent="AUDIO ERROR",console.error("BuildHer Bharat soundtrack could not be loaded:",i.error)},{once:!0}),i.addEventListener("canplay",()=>{t.textContent==="AUDIO ERROR"&&(t.textContent="OFF")},{once:!0}),i.preload="none");
+`,m=`
+<article aria-label="Azure Developer Community associate partner" class="azure-community-partner-card">
+  <div class="azure-community-partner-heading">
+    <span>ASSOCIATE PARTNER</span>
+    <h3>Azure Developer Community</h3>
+  </div>
+  <img alt="Supported by Microsoft Azure and Azure Developer Community" class="azure-community-partner-banner" decoding="async" height="233" loading="lazy" src="assets/azure-developer-community-banner.jpg" width="1396"/>
+</article>`;function u(i){const n='<article class="co-title-sponsor-card">';if(!i.includes(n))throw new Error("Could not find the sponsor section insertion point for the Azure Developer Community partner.");return i.replace(n,`${m}
+${n}`)}const c=document.getElementById("root");if(!c)throw new Error("BuildHer Bharat root element is missing.");let s=c.querySelector(".site-root");s||(s=document.createElement("div"),s.className="site-root",c.appendChild(s));s.hasAttribute("data-prerendered")||(s.innerHTML=u(h));const o=document.createElement("script");o.src="/script.js";o.async=!1;o.onerror=()=>{const i=s.querySelector("#music-state");i&&(i.textContent="LOAD ERROR");const n=document.getElementById("site-loader");n&&(n.classList.add("loader-hidden"),window.setTimeout(()=>n.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(o);const t=s.querySelector("#site-music"),r=s.querySelector("#music-state");t&&r&&(t.addEventListener("error",()=>{r.textContent="AUDIO ERROR",console.error("BuildHer Bharat soundtrack could not be loaded:",t.error)},{once:!0}),t.addEventListener("canplay",()=>{r.textContent==="AUDIO ERROR"&&(r.textContent="OFF")},{once:!0}),t.preload="none");

@@ -1,0 +1,42 @@
+.azure-community-partner-card {
+  display: grid;
+  gap: 16px;
+  width: min(100%, 980px);
+  margin: 0 auto 36px;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(75, 181, 244, .34);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(75,181,244,.10), transparent 48%),
+    linear-gradient(115deg, #171922, #11151e 62%, #151923);
+  box-shadow: 0 16px 42px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.azure-community-partner-heading {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  text-align: center;
+}
+.azure-community-partner-heading span {
+  color: #83d6ff;
+  font: 800 10px/1.4 Inter, sans-serif;
+  letter-spacing: 1.8px;
+}
+.azure-community-partner-heading h3 {
+  margin: 0;
+  color: #f4f8ff;
+  font: 700 clamp(20px, 3vw, 26px)/1.2 "Space Grotesk", sans-serif;
+}
+.azure-community-partner-banner {
+  display: block;
+  width: min(100%, 900px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 10px;
+  background: #fff;
+}
+@media (max-width: 520px) {
+  .azure-community-partner-card { gap: 13px; padding: 16px 12px; }
+  .azure-community-partner-heading span { font-size: 9px; }
+}

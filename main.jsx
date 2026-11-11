@@ -1,4 +1,5 @@
 import { siteMarkup } from './siteMarkup.js';
+import { withAzureCommunityPartner } from './azureCommunityPartner.js';
 
 const root = document.getElementById('root');
 if (!root) {
@@ -12,7 +13,7 @@ if (!mount) {
   root.appendChild(mount);
 }
 if (!mount.hasAttribute('data-prerendered')) {
-  mount.innerHTML = siteMarkup;
+  mount.innerHTML = withAzureCommunityPartner(siteMarkup);
 }
 
 const script = document.createElement('script');
