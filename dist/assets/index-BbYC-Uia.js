@@ -477,5 +477,19 @@
     <h3>Azure Developer Community</h3>
   </div>
   <img alt="Supported by Microsoft Azure and Azure Developer Community" class="azure-community-partner-banner" decoding="async" height="233" loading="lazy" src="assets/azure-developer-community-banner.jpg" width="1396"/>
-</article>`;function u(i){const n='<article class="co-title-sponsor-card">';if(!i.includes(n))throw new Error("Could not find the sponsor section insertion point for the Azure Developer Community partner.");return i.replace(n,`${m}
+</article>
+<article aria-label="Girl Up Change networking partner" class="azure-community-partner-card">
+  <div class="azure-community-partner-heading">
+    <span>NETWORKING PARTNER</span>
+    <h3>Girl Up Change</h3>
+  </div>
+  <img alt="Girl Up Change logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/girl-up-change.png" width="768"/>
+</article>
+<article aria-label="AI4Tomorrow community partner" class="azure-community-partner-card">
+  <div class="azure-community-partner-heading">
+    <span>COMMUNITY PARTNER</span>
+    <h3>AI4Tomorrow</h3>
+  </div>
+  <img alt="AI4Tomorrow logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/ai4tomorrow.png" width="768"/>
+</article>`;function u(i){const n='<article class="co-title-sponsor-card">';if(!i.includes(n))throw new Error("Could not find the sponsor section insertion point for the community partners.");return i.replace(n,`${m}
 ${n}`)}const c=document.getElementById("root");if(!c)throw new Error("BuildHer Bharat root element is missing.");let s=c.querySelector(".site-root");s||(s=document.createElement("div"),s.className="site-root",c.appendChild(s));s.hasAttribute("data-prerendered")||(s.innerHTML=u(h));const o=document.createElement("script");o.src="/script.js";o.async=!1;o.onerror=()=>{const i=s.querySelector("#music-state");i&&(i.textContent="LOAD ERROR");const n=document.getElementById("site-loader");n&&(n.classList.add("loader-hidden"),window.setTimeout(()=>n.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(o);const t=s.querySelector("#site-music"),r=s.querySelector("#music-state");t&&r&&(t.addEventListener("error",()=>{r.textContent="AUDIO ERROR",console.error("BuildHer Bharat soundtrack could not be loaded:",t.error)},{once:!0}),t.addEventListener("canplay",()=>{r.textContent==="AUDIO ERROR"&&(r.textContent="OFF")},{once:!0}),t.preload="none");

@@ -1,6 +1,6 @@
 import { readFile, writeFile, rm } from 'node:fs/promises';
 import { siteMarkup } from '../siteMarkup.js';
-import { withAzureCommunityPartner } from '../azureCommunityPartner.js';
+import { withCommunityPartners } from '../azureCommunityPartner.js';
 
 const root = process.cwd();
 const dist = `${root}/dist`;
@@ -24,7 +24,7 @@ const isPreview = process.env.VERCEL_ENV === 'preview';
 // Emit the entire event page into the initial HTML. This makes core content
 // available to crawlers and visitors before the JavaScript bundle executes.
 const rootToken = '<div id="root"></div>';
-const prerenderedRoot = `<div id="root"><div class="site-root" data-prerendered="true">${withAzureCommunityPartner(siteMarkup)}</div></div>`;
+const prerenderedRoot = `<div id="root"><div class="site-root" data-prerendered="true">${withCommunityPartners(siteMarkup)}</div></div>`;
 if (html.includes(rootToken)) {
   html = html.replace(rootToken, prerenderedRoot);
 } else if (!html.includes('data-prerendered="true"')) {

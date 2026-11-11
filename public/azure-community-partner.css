@@ -36,6 +36,14 @@
   border-radius: 10px;
   background: #fff;
 }
+.community-partner-logo {
+  display: block;
+  width: min(100%, 360px);
+  aspect-ratio: 1;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
 @media (max-width: 520px) {
   .azure-community-partner-card { gap: 13px; padding: 16px 12px; }
   .azure-community-partner-heading span { font-size: 9px; }
