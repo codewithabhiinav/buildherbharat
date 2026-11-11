@@ -1,7 +1,7 @@
 (function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))p(a);new MutationObserver(a=>{for(const e of a)if(e.type==="childList")for(const l of e.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&p(l)}).observe(document,{childList:!0,subtree:!0});function d(a){const e={};return a.integrity&&(e.integrity=a.integrity),a.referrerPolicy&&(e.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?e.credentials="include":a.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function p(a){if(a.ep)return;a.ep=!0;const e=d(a);fetch(a.href,e)}})();const h=`
 <div aria-hidden="true" class="scroll-progress"><span></span></div>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="ambient ambient-three"></div>
-<div class="announcement-bar"><span class="announcement-dot"></span><strong>BUILDHER BHARAT 2026</strong><span class="announcement-separator">/</span><span>Registration is 100% free</span><span class="announcement-separator">/</span><span>Round 1 · 7–15 November</span><a href="#timeline">Explore the journey <span>↗</span></a></div>
+<div class="announcement-bar"><span class="announcement-dot"></span><strong>BUILDHER BHARAT 2026</strong><span class="announcement-separator">/</span><span>IMPORTANT DEADLINE - 15 NOVEMBER 2026</span><span class="announcement-separator">/</span><span>Microsoft event registration + Round 1 PPT submission</span><a href="#timeline">See deadlines <span>↗</span></a></div>
 <aside aria-labelledby="mandatory-announcement-title" class="mandatory-announcement">
 <div class="mandatory-announcement-copy">
 <h2 id="mandatory-announcement-title">IMPORTANT ANNOUNCEMENT FOR ALL BUILDHER BHARAT TEAM MEMBERS!</h2>
@@ -75,7 +75,7 @@
 <article class="mandatory-task-card">
 <div class="mandatory-task-top"><span class="mandatory-task-number">TASK 03</span><span aria-hidden="true" class="mandatory-task-icon"><span class="microsoft-mark"><i></i><i></i><i></i><i></i></span></span></div>
 <h3>Microsoft Event Registration</h3>
-<p>Register for the official Microsoft event using the registration form.</p>
+<p>Register for the official Microsoft event by 15 November 2026 using the registration form.</p>
 <a class="mandatory-task-button" href="https://forms.gle/8k4xm1wB9PjunrDD8" rel="noopener noreferrer" target="_blank">REGISTER FOR MICROSOFT EVENT <span aria-hidden="true">↗</span></a>
 </article>
 </div>
@@ -105,22 +105,22 @@
 </article>
 <article class="event-highlight-card">
 <span class="event-highlight-label">TEAM PARTICIPATION</span>
-<strong><span data-count-format="compact" data-countup="110">110</span><i>+</i></strong>
+<strong><span data-count-format="compact" data-countup="140">140</span><i>+</i></strong>
 <p>Teams</p>
 <span class="event-highlight-foot">Ideas, collaboration and innovation</span>
 </article>
 <article class="event-highlight-card">
 <span class="event-highlight-label">COMMUNITY RESPONSE</span>
-<strong><span data-count-format="compact" data-countup="200">200</span><i>+</i></strong>
+<strong><span data-count-format="compact" data-countup="250">250</span><i>+</i></strong>
 <p>Registrations</p>
 <span class="event-highlight-foot">Students and innovators registering</span>
 </article>
 <article class="event-highlight-card event-highlight-reach">
 <span class="event-highlight-label">DIGITAL REACH</span>
-<strong><span data-countup="4000">4,000</span><i>+</i></strong>
+<strong><span data-countup="6000">6,000</span><i>+</i></strong>
 <p>IMPRESSIONS</p>
 <span class="event-highlight-foot">Strong digital visibility and audience engagement</span>
-<span class="event-highlight-context">Hosted as a private event on Unstop, with 4,000+ impressions.</span>
+<span class="event-highlight-context">Hosted as a private event on Unstop, with 6,000+ impressions.</span>
 <span class="event-highlight-icon event-highlight-icon-reach"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 6-7m-5 0h5v5"/></svg></span>
 </article>
 <article class="event-highlight-card">
@@ -130,10 +130,10 @@
 <span class="event-highlight-foot">Flexible team formation from 1 to 4 members.</span>
 </article>
 <article class="event-highlight-card">
-<span class="event-highlight-label">PARTICIPATING INSTITUTIONS</span>
-<strong><span data-count-format="compact" data-countup="50">50</span><i>+</i></strong>
-<p>Institutions &amp; Organisations</p>
-<span class="event-highlight-foot">People from 50+ institutions and organisations have registered for the hackathon.</span>
+<span class="event-highlight-label">PARTICIPATING COLLEGES &amp; INSTITUTIONS</span>
+<strong><span data-count-format="compact" data-countup="70">70</span><i>+</i></strong>
+<p>Colleges &amp; Institutions</p>
+<span class="event-highlight-foot">Participants from 70+ colleges and institutions have registered for the hackathon.</span>
 </article>
 </div>
 <p class="ecosystem-note">Connecting campuses, student communities and innovation partners across the ecosystem.</p>
