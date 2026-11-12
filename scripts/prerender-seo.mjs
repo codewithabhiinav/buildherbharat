@@ -9,7 +9,7 @@ let html = await readFile(indexPath, 'utf8');
 
 // Prefer an explicitly configured canonical domain; Vercel supplies the
 // stable production domain when automatic system environment variables are enabled.
-const canonicalInput = process.env.SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL || '';
+const canonicalInput = process.env.SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL || 'https://buildherbharat.com';
 
 function normalizeSiteUrl(value) {
   if (!value) return '';

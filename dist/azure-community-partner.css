@@ -44,7 +44,33 @@
   margin: 0 auto;
   object-fit: contain;
 }
+.networking-partner-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.networking-partner {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  background: rgba(255,255,255,.035);
+  text-align: center;
+}
+.networking-partner-name {
+  margin: 0;
+  color: #f4f8ff;
+  font: 700 clamp(16px, 2.4vw, 21px)/1.25 "Space Grotesk", sans-serif;
+}
+.networking-partner-list .community-partner-logo {
+  width: min(100%, 240px);
+}
 @media (max-width: 520px) {
   .azure-community-partner-card { gap: 13px; padding: 16px 12px; }
   .azure-community-partner-heading span { font-size: 9px; }
+  .networking-partner-list { grid-template-columns: 1fr; gap: 12px; }
+  .networking-partner { padding: 14px; }
 }
