@@ -239,10 +239,6 @@ body{background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;lette
 .footer-links a:hover{color:#edb0cc;transform:none;text-shadow:none}
 .copyright{font-size:10px;letter-spacing:.015em;color:#a899aa}
 .copyright a{color:#efb5d0}
-.music-player{border:1px solid rgba(232,169,201,.23);background:rgba(28,21,33,.96);box-shadow:0 8px 24px rgba(0,0,0,.22);backdrop-filter:blur(12px)}
-.music-toggle{background:#b3447c;box-shadow:none}
-.music-state{color:#e4aac4}
-
 /* Remove artificial motion loops; retain only quick hover feedback and functional counters. */
 *,*::before,*::after{animation-duration:0.001ms!important;animation-iteration-count:1!important;scroll-behavior:smooth}
 .hero-copy .eyebrow,.hero-copy h1,.hero-copy .hero-tagline,.hero-copy .hero-description,.hero-copy .hero-actions,.hero-copy .hero-meta,.hero-poster-wrap,.poster-frame:after,.hero-logo-shell,.orbit,.spark,.timeline-marker,.prize-card,.partner-card,.person-avatar:before,.person-avatar:after,.registration-qr-card,.cta-pattern,.eyebrow-line,.nav-cta,.button-primary{animation:none!important}

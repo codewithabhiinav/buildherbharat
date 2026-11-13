@@ -36,6 +36,10 @@ export const siteMarkup = `
       <a href="#partners">Sponsors</a>
       <a href="#organisers">Organising Team</a>
       <a href="#contact">Contact</a>
+      <button aria-label="Switch to light theme" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <span>Light mode</span>
+      </button>
       <a class="nav-cta" href="https://unstop.com/p/build-her-bharat-shenfinity-1766366" rel="noopener noreferrer" target="_blank">
         Register Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
       </a>
@@ -1669,26 +1673,4 @@ export const siteMarkup = `
   </div>
 </footer>
 
-<div class="music-player" id="music-player">
-  <audio id="site-music" loop="" preload="none" src="/assets/buildher-anthem.mp3"></audio>
-  <div aria-hidden="true" class="music-disc">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
-  </div>
-  <div class="music-player-info">
-    <strong class="track-title">Kar Har Maidan Fateh</strong>
-    <small class="track-artist">BuildHer Bharat Soundtrack</small>
-  </div>
-  <button aria-label="Play background music" aria-pressed="false" class="music-toggle-btn" id="music-toggle" type="button">
-    <span class="play-state-icon">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-    </span>
-    <span class="pause-state-icon">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-    </span>
-  </button>
-  <label aria-label="Music volume" class="music-vol-wrap">
-    <input aria-label="Background music volume" id="music-volume" max="1" min="0" step="0.05" type="range" value="0.5"/>
-  </label>
-  <span class="music-status-badge" id="music-state">OFF</span>
-</div>
 `;

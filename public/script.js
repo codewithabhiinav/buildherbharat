@@ -94,7 +94,40 @@
     });
   }
 
-  // 3. Scroll Progress Indicator
+  // 3. Theme Toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+  if (themeToggle) {
+    let savedTheme = 'dark';
+    try {
+      savedTheme = window.localStorage.getItem('buildher-bharat-theme') || 'dark';
+    } catch (error) {
+      console.warn('Theme preference could not be loaded:', error);
+    }
+
+    const applyTheme = (theme) => {
+      const isLight = theme === 'light';
+      document.documentElement.dataset.theme = isLight ? 'light' : 'dark';
+      themeToggle.setAttribute('aria-pressed', String(isLight));
+      themeToggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} theme`);
+      themeToggle.querySelector('span').textContent = `${isLight ? 'Dark' : 'Light'} mode`;
+      if (themeMeta) themeMeta.setAttribute('content', isLight ? '#f7f9fc' : '#050c18');
+    };
+
+    applyTheme(savedTheme);
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      try {
+        window.localStorage.setItem('buildher-bharat-theme', theme);
+      } catch (error) {
+        console.warn('Theme preference could not be saved:', error);
+      }
+      applyTheme(theme);
+    });
+  }
+
+  // 4. Scroll Progress Indicator
   const progressSpan = document.querySelector('.scroll-progress span');
   let ticking = false;
 
@@ -114,7 +147,7 @@
   }, { passive: true });
   updateScroll();
 
-  // 4. Registration Deadline Countdown: 15 November 2026, 11:59 PM IST
+  // 5. Registration Deadline Countdown: 15 November 2026, 11:59 PM IST
   const regDeadline = new Date('2026-11-15T23:59:00+05:30').getTime();
   const regFields = {
     days: document.getElementById('reg-days'),
@@ -142,7 +175,7 @@
   updateRegCountdown();
   window.setInterval(updateRegCountdown, 1000);
 
-  // 5. Grand Finale Countdown: 25 November 2026, 9:00 AM IST
+  // 6. Grand Finale Countdown: 25 November 2026, 9:00 AM IST
   const finaleDate = new Date('2026-11-25T09:00:00+05:30').getTime();
   const finaleFields = {
     days: document.getElementById('days'),
@@ -170,7 +203,7 @@
   updateFinaleCountdown();
   window.setInterval(updateFinaleCountdown, 1000);
 
-  // 6. Statistics Count-Up (Single Viewport Trigger, No Infinite Loops)
+  // 7. Statistics Count-Up (Single Viewport Trigger, No Infinite Loops)
   const countupNodes = [...document.querySelectorAll('[data-countup]')];
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -224,7 +257,7 @@
     countupNodes.forEach((node) => runCount(node));
   }
 
-  // 7. Custom Precision Cursor (Desktop Only, Pointer-Events None)
+  // 8. Custom Precision Cursor (Desktop Only, Pointer-Events None)
   const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   if (finePointer && !prefersReducedMotion) {
@@ -280,60 +313,6 @@
       ring.style.opacity = '0';
       isVisible = false;
     });
-  }
-
-  // 8. Background Soundtrack Audio Player
-  const audio = document.getElementById('site-music');
-  const player = document.getElementById('music-player');
-  const toggleBtn = document.getElementById('music-toggle');
-  const volInput = document.getElementById('music-volume');
-  const stateBadge = document.getElementById('music-state');
-
-  if (audio && player && toggleBtn) {
-    audio.volume = volInput ? Number(volInput.value) : 0.5;
-
-    const syncUI = (isPlaying) => {
-      player.classList.toggle('is-playing', isPlaying);
-      toggleBtn.setAttribute('aria-pressed', String(isPlaying));
-      toggleBtn.setAttribute('aria-label', isPlaying ? 'Pause soundtrack' : 'Play soundtrack');
-      if (stateBadge) stateBadge.textContent = isPlaying ? 'ON' : 'OFF';
-    };
-
-    toggleBtn.addEventListener('click', async () => {
-      if (audio.paused) {
-        try {
-          await audio.play();
-          syncUI(true);
-        } catch (err) {
-          syncUI(false);
-          if (stateBadge) stateBadge.textContent = 'TAP';
-          console.warn('Audio playback could not be started:', err);
-        }
-      } else {
-        audio.pause();
-        syncUI(false);
-      }
-    });
-
-    if (volInput) {
-      volInput.addEventListener('input', () => {
-        audio.volume = Number(volInput.value);
-        audio.muted = audio.volume === 0;
-      });
-    }
-
-    audio.addEventListener('play', () => syncUI(true));
-    audio.addEventListener('pause', () => syncUI(false));
-    audio.addEventListener('ended', () => {
-      if (audio.loop) syncUI(true);
-      else syncUI(false);
-    });
-    audio.addEventListener('error', () => {
-      syncUI(false);
-      if (stateBadge) stateBadge.textContent = 'ERR';
-    });
-
-    syncUI(false);
   }
 
   // Signal app ready

@@ -35,8 +35,8 @@ Priya has been added to the organiser section. WhatsApp: https://wa.me/919416753
 The website includes a Socials section for Shenfinity, Hacknfinity and BuildHer Bharat, with LinkedIn and Instagram actions. Hacknfinity's LinkedIn button links to its public company page. For other profiles that could not be verified, the buttons open platform search pages rather than claiming an unverified profile is official.
 
 
-## Background music
-The uploaded MP3 is included at `assets/buildher-anthem.mp3`. A floating music player provides play/pause and volume controls and loops the track. Visitors must press Play; audio does not autoplay. Make sure you have the necessary rights or permission to publicly play and distribute this recording on the event website.
+## Theme control
+The website does not autoplay or provide background music. Visitors can switch between dark and light themes using the header control.
 
 
 ## Official social profiles and organiser LinkedIn

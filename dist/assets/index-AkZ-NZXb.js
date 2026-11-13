@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))p(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const d of a.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&p(d)}).observe(document,{childList:!0,subtree:!0});function t(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function p(e){if(e.ep)return;e.ep=!0;const a=t(e);fetch(e.href,a)}})();const u=`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))d(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&d(o)}).observe(document,{childList:!0,subtree:!0});function n(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function d(e){if(e.ep)return;e.ep=!0;const a=n(e);fetch(e.href,a)}})();const p=`
 <div aria-hidden="true" class="scroll-progress"><span></span></div>
 
 <div class="announcement-banner">
@@ -36,6 +36,10 @@
       <a href="#partners">Sponsors</a>
       <a href="#organisers">Organising Team</a>
       <a href="#contact">Contact</a>
+      <button aria-label="Switch to light theme" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <span>Light mode</span>
+      </button>
       <a class="nav-cta" href="https://unstop.com/p/build-her-bharat-shenfinity-1766366" rel="noopener noreferrer" target="_blank">
         Register Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
       </a>
@@ -1669,29 +1673,7 @@
   </div>
 </footer>
 
-<div class="music-player" id="music-player">
-  <audio id="site-music" loop="" preload="none" src="/assets/buildher-anthem.mp3"></audio>
-  <div aria-hidden="true" class="music-disc">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
-  </div>
-  <div class="music-player-info">
-    <strong class="track-title">Kar Har Maidan Fateh</strong>
-    <small class="track-artist">BuildHer Bharat Soundtrack</small>
-  </div>
-  <button aria-label="Play background music" aria-pressed="false" class="music-toggle-btn" id="music-toggle" type="button">
-    <span class="play-state-icon">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-    </span>
-    <span class="pause-state-icon">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-    </span>
-  </button>
-  <label aria-label="Music volume" class="music-vol-wrap">
-    <input aria-label="Background music volume" id="music-volume" max="1" min="0" step="0.05" type="range" value="0.5"/>
-  </label>
-  <span class="music-status-badge" id="music-state">OFF</span>
-</div>
-`,h=`
+`,c=`
 <div class="associate-partner-showcase">
   <article aria-label="Azure Developer Community associate partner" class="associate-partner-card">
     <div class="partner-tier-heading">
@@ -1735,5 +1717,5 @@
       </div>
     </article>
   </div>
-</div>`;function v(i){const s='<div id="community-partners-slot"></div>';if(i.includes(s))return i.replace(s,h);const t='<article class="co-title-sponsor-card">';return i.includes(t)?i.replace(t,`${h}
-${t}`):i}const c=document.getElementById("root");if(!c)throw new Error("BuildHer Bharat root element is missing.");let r=c.querySelector(".site-root");r||(r=document.createElement("div"),r.className="site-root",c.appendChild(r));r.hasAttribute("data-prerendered")||(r.innerHTML=v(u));const l=document.createElement("script");l.src="/script.js";l.async=!1;l.onerror=()=>{const i=r.querySelector("#music-state");i&&(i.textContent="LOAD ERROR");const s=document.getElementById("site-loader");s&&(s.classList.add("loader-hidden"),window.setTimeout(()=>s.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(l);const n=r.querySelector("#site-music"),o=r.querySelector("#music-state");n&&o&&(n.addEventListener("error",()=>{o.textContent="AUDIO ERROR",console.error("BuildHer Bharat soundtrack could not be loaded:",n.error)},{once:!0}),n.addEventListener("canplay",()=>{o.textContent==="AUDIO ERROR"&&(o.textContent="OFF")},{once:!0}),n.preload="none");
+</div>`;function h(s){const i='<div id="community-partners-slot"></div>';if(s.includes(i))return s.replace(i,c);const n='<article class="co-title-sponsor-card">';return s.includes(n)?s.replace(n,`${c}
+${n}`):s}const l=document.getElementById("root");if(!l)throw new Error("BuildHer Bharat root element is missing.");let r=l.querySelector(".site-root");r||(r=document.createElement("div"),r.className="site-root",l.appendChild(r));r.hasAttribute("data-prerendered")||(r.innerHTML=h(p));const t=document.createElement("script");t.src="/script.js";t.async=!1;t.onerror=()=>{const s=document.getElementById("site-loader");s&&(s.classList.add("loader-hidden"),window.setTimeout(()=>s.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(t);

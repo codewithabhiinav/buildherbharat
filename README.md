@@ -90,8 +90,8 @@ npm run seo:check
 - Automated generation of canonical URLs, JSON-LD Schema (`Organization`, `WebSite`, `Event`), `sitemap.xml`, and `robots.txt`.
 - 100% PASS on `npm run seo:check`.
 
-### 8. Soundtrack & Interaction Quality
-- Background anthem "Kar Har Maidan Fateh" (`/assets/buildher-anthem.mp3`) with user-initiated playback, volume control, and non-intrusive floating pill UI.
+### 8. Theme & Interaction Quality
+- Persistent dark/light theme toggle in the header.
 - Custom desktop cursor with `pointer-events: none` that never intercepts clicks and is disabled on touch devices.
 - High-contrast, WCAG-compliant color balance with responsive layout from 320px mobile to 4K displays.
 

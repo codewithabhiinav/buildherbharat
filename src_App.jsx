@@ -16,8 +16,6 @@ export default function App() {
     script.src = '/script.js';
     script.async = false;
     script.onerror = () => {
-      const state = mount.querySelector('#music-state');
-      if (state) state.textContent = 'LOAD ERROR';
       // Do not leave the preloader blocking the page if the interaction bundle fails.
       const loader = document.getElementById('site-loader');
       if (loader) {
@@ -28,20 +26,6 @@ export default function App() {
       console.error('BuildHer Bharat page script could not be loaded.');
     };
     document.body.appendChild(script);
-
-    const audio = mount.querySelector('#site-music');
-    const state = mount.querySelector('#music-state');
-    if (audio && state) {
-      audio.addEventListener('error', () => {
-        state.textContent = 'AUDIO ERROR';
-        console.error('BuildHer Bharat soundtrack could not be loaded:', audio.error);
-      }, { once: true });
-      audio.addEventListener('canplay', () => {
-        if (state.textContent === 'AUDIO ERROR') state.textContent = 'OFF';
-      }, { once: true });
-      // Playback is user-initiated; explicitly prime the audio source without autoplay.
-      audio.load();
-    }
 
     return () => {
       script.remove();
