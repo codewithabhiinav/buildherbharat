@@ -31,10 +31,10 @@ export const siteMarkup = `
       </a>
       <a href="#about">About</a>
       <a href="#tracks">Tracks</a>
-      <a href="#timeline">Journey</a>
+      <a href="#timeline">Rounds</a>
       <a href="#highlights">Highlights</a>
       <a href="#partners">Sponsors</a>
-      <a href="#organisers">People</a>
+      <a href="#organisers">Organising Team</a>
       <a href="#contact">Contact</a>
       <a class="nav-cta" href="https://unstop.com/p/build-her-bharat-shenfinity-1766366" rel="noopener noreferrer" target="_blank">
         Register Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -237,11 +237,38 @@ export const siteMarkup = `
 
         <article class="stat-card">
           <div class="stat-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <span class="stat-label">DIGITAL IMPRESSIONS</span>
-          <strong class="stat-number"><span data-countup="4000">4,000</span><i>+</i></strong>
-          <span class="stat-caption">Broad community reach across Unstop &amp; partner networks</span>
+          <span class="stat-label">REGISTRATIONS</span>
+          <strong class="stat-number"><span data-countup="290">290</span><i>+</i></strong>
+          <span class="stat-caption">Participants registered for BuildHer Bharat 2026</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg>
+          </div>
+          <span class="stat-label">TEAMS</span>
+          <strong class="stat-number"><span data-countup="160">160</span><i>+</i></strong>
+          <span class="stat-caption">Teams participating in BuildHer Bharat 2026</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          </div>
+          <span class="stat-label">INSTITUTIONS REPRESENTED</span>
+          <strong class="stat-number"><span data-countup="70">70</span><i>+</i></strong>
+          <span class="stat-caption">Students participating from different institutions</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V10m0 0 4 4m-4-4-4 4"/><path d="M4 16.5a4.5 4.5 0 0 1 .5-9A7.5 7.5 0 0 1 19 9a4 4 0 0 1 1 7.9"/></svg>
+          </div>
+          <span class="stat-label">DIRECT REACH</span>
+          <strong class="stat-number"><span data-countup="10000">10,000</span><i>+</i></strong>
+          <span class="stat-caption">People reached through event and partner communities</span>
         </article>
 
         <article class="stat-card">
@@ -286,7 +313,7 @@ export const siteMarkup = `
         <div class="section-eyebrow">OFFICIAL REGISTRATION · UNSTOP</div>
         <h2 class="section-title" id="register-title">Your idea deserves<br/><em>a bigger stage.</em></h2>
         <p class="section-lead">
-          Registration is hosted on the official Unstop platform. Register your team of 1–4 members today to begin your journey.
+          Registration is hosted on the official Unstop platform. Register your team of 1–4 members today to compete across all three rounds.
         </p>
 
         <div aria-label="Registration closes on 15 November 2026 at 11:59 PM Indian Standard Time" class="deadline-timer-card">
@@ -554,7 +581,7 @@ export const siteMarkup = `
   <section aria-labelledby="timeline-title" class="section timeline-section" id="timeline">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-eyebrow">COMPETITION JOURNEY</div>
+        <div class="section-eyebrow">COMPETITION ROUNDS</div>
         <h2 class="section-title" id="timeline-title">Three rounds. <em>One big leap.</em></h2>
         <p class="section-lead">
           A structured roadmap designed to guide participants from initial concept through prototype mentoring to the offline Grand Finale.
@@ -1207,7 +1234,7 @@ export const siteMarkup = `
   <section aria-labelledby="share-moments-title" class="section share-moments-section" id="share-moments">
     <div class="container">
       <div class="section-header centered">
-        <div class="section-eyebrow">YOUR JOURNEY · YOUR STORY</div>
+        <div class="section-eyebrow">YOUR BUILD · YOUR STORY</div>
         <h2 class="section-title" id="share-moments-title">Share Your <em>Moments.</em></h2>
         <p class="section-lead">
           Document your team's hackathon experience, late-night brainstorming, prototype builds, and Grand Finale memories.
@@ -1220,9 +1247,9 @@ export const siteMarkup = `
           <span>50% SOCIAL MEDIA PARTICIPATION BONUS</span>
         </div>
         <div class="bonus-copy">
-          <h4>Amplify your journey and boost your round evaluation score</h4>
+          <h4>Share your progress and boost your round evaluation score</h4>
           <p>
-            Share your BuildHer Bharat journey on social media, tag <strong>@buildherbharat</strong> and use official hashtags to earn up to 50% bonus points. This bonus enhances your progress across all three competition rounds. Final selection follows respective round evaluation rubrics.
+            Share highlights from each BuildHer Bharat round on social media, tag <strong>@buildherbharat</strong> and use official hashtags to earn up to 50% bonus points. This bonus enhances your progress across all three competition rounds. Final selection follows respective round evaluation rubrics.
           </p>
         </div>
       </div>
