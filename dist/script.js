@@ -147,8 +147,8 @@
   }, { passive: true });
   updateScroll();
 
-  // 5. Registration Deadline Countdown: 15 November 2026, 11:59 PM IST
-  const regDeadline = new Date('2026-11-15T23:59:00+05:30').getTime();
+  // 5. Registration Deadline Countdown: 20 November 2026, 11:59 PM IST
+  const regDeadline = new Date('2026-11-20T23:59:00+05:30').getTime();
   const regFields = {
     days: document.getElementById('reg-days'),
     hours: document.getElementById('reg-hours'),

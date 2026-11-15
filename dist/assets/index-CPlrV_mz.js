@@ -4,8 +4,8 @@
 <div class="announcement-banner">
   <div class="container announcement-inner">
     <div class="announcement-copy">
-      <span class="announcement-badge"><span class="pulse-dot"></span> DEADLINE 15 NOV 2026</span>
-      <span class="announcement-text">Compulsory tasks for all team members: GitHub repository submission, ASI One registration &amp; Microsoft event registration.</span>
+      <span class="announcement-badge"><span class="pulse-dot"></span> DEADLINE 20 NOV 2026</span>
+      <span class="announcement-text">Registration closes 20 Nov 2026 • Round 1 ends 21 Nov • Round 2 closes 22 Nov • Top 25 teams move to the Grand Finale.</span>
     </div>
     <a class="announcement-action" href="#mandatory-tasks">Complete Tasks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
   </div>
@@ -27,7 +27,7 @@
     <nav class="main-nav" id="main-nav">
       <a class="nav-mandatory-link" href="#mandatory-tasks">
         <span>Mandatory Tasks</span>
-        <span class="nav-task-count">3</span>
+        <span class="nav-task-count">2</span>
       </a>
       <a href="#about">About</a>
       <a href="#tracks">Tracks</a>
@@ -71,7 +71,7 @@
             Explore 3 Rounds <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
           </a>
           <a class="hero-task-button" href="#mandatory-tasks">
-            <span class="task-badge-dot"></span> Mandatory Tasks (3) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span class="task-badge-dot"></span> Mandatory Tasks (2) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="hero-facts-row">
@@ -149,7 +149,7 @@
         <div class="section-eyebrow">COMPULSORY FOR ALL PARTICIPANTS</div>
         <h2 class="section-title" id="mandatory-tasks-title">Mandatory Tasks <em>Action Required</em></h2>
         <p class="section-lead">
-          All team members are required to complete all three tasks listed below. These tasks are compulsory for every individual team member without exception. Please complete your submissions promptly.
+          All team members are required to complete both mandatory tasks listed below. These tasks are compulsory for every individual team member without exception. Please complete your submissions promptly.
         </p>
       </div>
 
@@ -184,27 +184,12 @@
           </a>
         </article>
 
-        <article class="mandatory-card">
-          <div class="mandatory-card-top">
-            <span class="task-number">TASK 03</span>
-            <span class="task-icon ms-badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="9" height="9" fill="#f25022"/><rect x="13" y="2" width="9" height="9" fill="#7fba00"/><rect x="2" y="13" width="9" height="9" fill="#00a4ef"/><rect x="13" y="13" width="9" height="9" fill="#ffb900"/></svg>
-            </span>
-          </div>
-          <h3 class="mandatory-card-title">Microsoft Event Registration</h3>
-          <p class="mandatory-card-desc">
-            Register for the official Microsoft ecosystem session by 15 November 2026 to ensure eligibility for mentorship and credits.
-          </p>
-          <a class="mandatory-submit-btn" href="https://forms.gle/8k4xm1wB9PjunrDD8" rel="noopener noreferrer" target="_blank">
-            Register for Microsoft Event <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </article>
       </div>
 
       <div class="mandatory-callout">
         <div class="callout-content">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          <span>All three tasks are mandatory for every individual participant across all registered teams.</span>
+          <span>Both mandatory tasks are required for every individual participant across all registered teams.</span>
         </div>
       </div>
     </div>
@@ -244,7 +229,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <span class="stat-label">REGISTRATIONS</span>
-          <strong class="stat-number"><span data-countup="290">290</span><i>+</i></strong>
+          <strong class="stat-number"><span data-countup="320">320</span><i>+</i></strong>
           <span class="stat-caption">Participants registered for BuildHer Bharat 2026</span>
         </article>
 
@@ -253,8 +238,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 8v6m3-3h-6"/></svg>
           </div>
           <span class="stat-label">TEAMS</span>
-          <strong class="stat-number"><span data-countup="160">160</span><i>+</i></strong>
-          <span class="stat-caption">Teams participating in BuildHer Bharat 2026</span>
+          <strong class="stat-number"><span data-countup="170">170</span><i>+</i></strong>
+          <span class="stat-caption">Teams shortlisted from Round 1 and Round 2</span>
         </article>
 
         <article class="stat-card">
@@ -262,8 +247,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
           </div>
           <span class="stat-label">INSTITUTIONS REPRESENTED</span>
-          <strong class="stat-number"><span data-countup="70">70</span><i>+</i></strong>
-          <span class="stat-caption">Students participating from different institutions</span>
+          <strong class="stat-number"><span data-countup="90">90</span><i>+</i></strong>
+          <span class="stat-caption">Institutions represented across the BuildHer Bharat ecosystem</span>
         </article>
 
         <article class="stat-card">
@@ -288,9 +273,9 @@
           <div class="stat-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
           </div>
-          <span class="stat-label">COMPETITION ROUNDS</span>
-          <strong class="stat-number"><span data-countup="3">3</span></strong>
-          <span class="stat-caption">From online PPT submission to the offline Grand Finale</span>
+          <span class="stat-label">FINALIST TEAMS</span>
+          <strong class="stat-number"><span data-countup="25">25</span></strong>
+          <span class="stat-caption">Teams advancing to the offline Grand Finale on 25 November 2026</span>
         </article>
       </div>
     </div>
@@ -320,11 +305,11 @@
           Registration is hosted on the official Unstop platform. Register your team of 1–4 members today to compete across all three rounds.
         </p>
 
-        <div aria-label="Registration closes on 15 November 2026 at 11:59 PM Indian Standard Time" class="deadline-timer-card">
+        <div aria-label="Registration closes on 20 November 2026 at 11:59 PM Indian Standard Time" class="deadline-timer-card">
           <div class="timer-header">
             <span class="timer-dot"></span>
             <strong>REGISTRATION CLOSES IN</strong>
-            <span class="timer-cutoff">15 NOV 2026 · 11:59 PM IST</span>
+            <span class="timer-cutoff">20 NOV 2026 · 11:59 PM IST</span>
           </div>
           <div class="timer-units">
             <div class="timer-unit"><strong id="reg-days">--</strong><span>DAYS</span></div>
@@ -601,7 +586,7 @@
           <div class="timeline-body-col">
             <div class="round-meta-header">
               <span class="round-tag live-tag"><span class="pulse-dot"></span> ROUND ONE · ONLINE</span>
-              <span class="round-dates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 7–15 November 2026 · Closes 11:59 PM IST</span>
+              <span class="round-dates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 20–21 November 2026 · Closes 11:59 PM IST</span>
             </div>
             <h3 class="round-title">PPT Submission on Unstop</h3>
             <p class="round-description">
@@ -662,7 +647,7 @@
           <div class="timeline-body-col">
             <div class="round-meta-header">
               <span class="round-tag"><span class="pulse-dot"></span> ROUND TWO · ONLINE (GOOGLE MEET)</span>
-              <span class="round-dates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 18–21 November 2026</span>
+              <span class="round-dates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 22 November 2026 · 10:00 AM IST onward</span>
             </div>
             <h3 class="round-title">Mentoring &amp; Prototype Development</h3>
             <p class="round-description">
@@ -1424,7 +1409,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-answer">
-              <p>The hackathon comprises: (1) Round 1: Online Idea Deck (PPT) submission on Unstop from 7–15 November 2026; (2) Round 2: Online mentoring and prototype reviews via Google Meet from 18–21 November 2026; and (3) Round 3: Offline Grand Finale at K.R. Mangalam University, Gurugram on 25 November 2026.</p>
+              <p>The hackathon comprises: (1) Round 1: Online Idea Deck (PPT) submission on Unstop from 20–21 November 2026; (2) Round 2: Online mentoring and prototype reviews via Google Meet on 22 November 2026; and (3) Round 3: Offline Grand Finale at K.R. Mangalam University, Gurugram on 25 November 2026.</p>
             </div>
           </details>
 
@@ -1454,7 +1439,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-answer">
-              <p>Every individual team member must complete all three tasks listed on this website: (1) GitHub Repository Submission, (2) ASI One Registration, and (3) Microsoft Event Registration by 15 November 2026. Completion is mandatory to confirm project eligibility.</p>
+              <p>Every individual team member must complete both required tasks listed on this website: (1) GitHub Repository Submission and (2) ASI One Registration. Completion is mandatory to confirm project eligibility.</p>
             </div>
           </details>
 
