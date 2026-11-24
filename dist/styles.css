@@ -2577,6 +2577,13 @@ ul, ol {
   border-color: rgba(245, 158, 11, 0.3);
 }
 
+.silver-sponsor-card {
+  grid-column: 1 / -1;
+  grid-template-columns: 1.5fr 0.5fr;
+  border-color: rgba(203, 213, 225, 0.42);
+  background: linear-gradient(135deg, rgba(203, 213, 225, 0.06), var(--bg-surface));
+}
+
 .partner-tier-badge {
   display: inline-block;
   font-size: 10px;
@@ -2589,6 +2596,11 @@ ul, ol {
 
 .powered-by-card .partner-tier-badge {
   color: var(--accent-gold-bright);
+}
+
+.silver-sponsor-card .partner-tier-badge,
+.silver-sponsor-card .sponsor-name em {
+  color: #d8dee8;
 }
 
 .sponsor-name {

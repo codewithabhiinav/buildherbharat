@@ -935,6 +935,22 @@
             </div>
           </div>
         </article>
+
+        <article class="primary-sponsor-card silver-sponsor-card">
+          <div class="sponsor-card-copy">
+            <span class="partner-tier-badge">SILVER SPONSOR</span>
+            <h3 class="sponsor-name">Hackgyan<em>verse</em></h3>
+            <p class="sponsor-description">
+              Proudly supporting BuildHer Bharat 2026 as a Silver Sponsor and helping women innovators turn ideas into impact.
+            </p>
+            <span class="sponsor-tagline">SILVER SPONSOR · BUILDHER BHARAT 2026</span>
+          </div>
+          <div class="sponsor-card-logo">
+            <div class="logo-tile tile-large">
+              <img alt="Hackgyanverse – Silver Sponsor of BuildHer Bharat 2026" class="sponsor-img" decoding="async" height="1024" loading="lazy" src="assets/hackgyanverse-logo.jpeg" width="1024"/>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div class="partner-tier-heading-strip">
