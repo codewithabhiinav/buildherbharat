@@ -399,7 +399,7 @@
             Organised by <strong>Shenfinity</strong>, sponsored and supported by the <strong>Hacknfinity Ecosystem</strong>, and featuring the <strong>Centre of Excellence – Cloud Computing, K.R. Mangalam University</strong> as key institutional collaborator.
           </p>
           <p class="manifesto-body">
-            With <strong>SheKunj</strong> as Platform Partner &amp; Sponsor and <strong>UpToSkills</strong> as Platform &amp; Hiring Partner, the initiative connects women innovators with real-world industry mentorship, venture thinking, and placement opportunities.
+            With <strong>Unstop</strong> and <strong>SheKunj</strong> as Platform Partners &amp; Sponsors, and <strong>UpToSkills</strong> as Platform &amp; Hiring Partner, the initiative connects women innovators with real-world industry mentorship, venture thinking, and placement opportunities.
           </p>
           <div class="about-milestones-row">
             <div class="milestone-chip"><span>01</span> Idea Submission</div>
@@ -967,6 +967,15 @@
           </div>
           <h4 class="partner-title">SheKunj</h4>
           <p class="partner-role-desc">Platform Partner &amp; Sponsor</p>
+        </article>
+
+        <article class="partner-card">
+          <span class="partner-role">REGISTRATION PLATFORM PARTNER</span>
+          <div class="partner-logo-tile">
+            <img alt="Unstop registration platform logo" class="partner-img" decoding="async" height="512" loading="lazy" src="assets/unstop.webp" width="512"/>
+          </div>
+          <h4 class="partner-title">Unstop</h4>
+          <p class="partner-role-desc">Official Registration Platform Partner</p>
         </article>
 
         <article class="partner-card institutional-partner-card">
