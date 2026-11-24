@@ -2603,6 +2603,18 @@ ul, ol {
   color: #d8dee8;
 }
 
+.bronze-sponsor-card {
+  grid-column: 1 / -1;
+  grid-template-columns: 1.5fr 0.5fr;
+  border-color: rgba(205, 127, 50, 0.42);
+  background: linear-gradient(135deg, rgba(205, 127, 50, 0.08), var(--bg-surface));
+}
+
+.bronze-sponsor-card .partner-tier-badge,
+.bronze-sponsor-card .sponsor-name em {
+  color: #d99a62;
+}
+
 .sponsor-name {
   font-family: var(--font-display);
   font-size: 20px;
@@ -2882,6 +2894,10 @@ ul, ol {
   .marquee-sponsor-block,
   .partner-cards-grid,
   .sub-partners-grid {
+    grid-template-columns: 1fr;
+  }
+  .silver-sponsor-card,
+  .bronze-sponsor-card {
     grid-template-columns: 1fr;
   }
   .sponsor-brochure-panel {

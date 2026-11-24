@@ -951,6 +951,22 @@
             </div>
           </div>
         </article>
+
+        <article class="primary-sponsor-card bronze-sponsor-card">
+          <div class="sponsor-card-copy">
+            <span class="partner-tier-badge">BRONZE SPONSOR</span>
+            <h3 class="sponsor-name">Tech<em>Tribe</em></h3>
+            <p class="sponsor-description">
+              Supporting BuildHer Bharat 2026 as a Bronze Sponsor and helping build a stronger technology community for women innovators.
+            </p>
+            <span class="sponsor-tagline">BRONZE SPONSOR · BUILDHER BHARAT 2026</span>
+          </div>
+          <div class="sponsor-card-logo">
+            <div class="logo-tile tile-large">
+              <img alt="TechTribe – Bronze Sponsor of BuildHer Bharat 2026" class="sponsor-img" decoding="async" height="600" loading="lazy" src="assets/logo-techtribe.jpeg" width="600"/>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div class="partner-tier-heading-strip">
