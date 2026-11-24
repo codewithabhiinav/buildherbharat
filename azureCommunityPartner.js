@@ -32,15 +32,27 @@ const communityPartnerMarkup = `
       </div>
     </article>
 
-    <article aria-label="AI4Tomorrow community partner" class="community-partner-card">
-      <div class="partner-tier-heading">
-        <span class="partner-tier-tag">COMMUNITY PARTNER</span>
-        <h3>AI4Tomorrow</h3>
-      </div>
-      <div class="partner-logo-tile community-partner-tile">
-        <img alt="AI4Tomorrow logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/ai4tomorrow.png" width="768"/>
-      </div>
-    </article>
+    <div class="community-partners-column">
+      <article aria-label="AI4Tomorrow community partner" class="community-partner-card">
+        <div class="partner-tier-heading">
+          <span class="partner-tier-tag">COMMUNITY PARTNER</span>
+          <h3>AI4Tomorrow</h3>
+        </div>
+        <div class="partner-logo-tile community-partner-tile">
+          <img alt="AI4Tomorrow logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/ai4tomorrow.png" width="768"/>
+        </div>
+      </article>
+
+      <article aria-label="Codllers community partner" class="community-partner-card codllers-partner-card">
+        <div class="partner-tier-heading">
+          <span class="partner-tier-tag">COMMUNITY PARTNER</span>
+          <h3>Codllers</h3>
+        </div>
+        <div class="partner-logo-tile community-partner-tile">
+          <img alt="Codllers logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/codllers-logo.png" width="768"/>
+        </div>
+      </article>
+    </div>
   </div>
 </div>`;
 

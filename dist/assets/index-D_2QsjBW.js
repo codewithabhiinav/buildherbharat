@@ -27,7 +27,7 @@
     <nav class="main-nav" id="main-nav">
       <a class="nav-mandatory-link" href="#mandatory-tasks">
         <span>Mandatory Tasks</span>
-        <span class="nav-task-count">2</span>
+        <span class="nav-task-count">3</span>
       </a>
       <a href="#about">About</a>
       <a href="#tracks">Tracks</a>
@@ -71,7 +71,7 @@
             Explore 3 Rounds <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
           </a>
           <a class="hero-task-button" href="#mandatory-tasks">
-            <span class="task-badge-dot"></span> Mandatory Tasks (2) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span class="task-badge-dot"></span> Mandatory Tasks (3) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="hero-facts-row">
@@ -149,9 +149,15 @@
         <div class="section-eyebrow">COMPULSORY FOR ALL PARTICIPANTS</div>
         <h2 class="section-title" id="mandatory-tasks-title">Mandatory Tasks <em>Action Required</em></h2>
         <p class="section-lead">
-          All team members are required to complete both mandatory tasks listed below. These tasks are compulsory for every individual team member without exception. Please complete your submissions promptly.
+          All team members are required to complete all three mandatory tasks listed below. These tasks are compulsory for every individual team member without exception. Please complete your submissions promptly.
         </p>
       </div>
+
+      <a class="giveaway-alert" href="#mandatory-task-2">
+        <span class="giveaway-alert-badge">GIVEAWAY ALERT</span>
+        <strong>Task 2: Register for the BuildHer Bharat Course Giveaway.</strong>
+        <span class="giveaway-alert-action">View Task 2 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </a>
 
       <div class="mandatory-grid">
         <article class="mandatory-card">
@@ -170,17 +176,36 @@
           </a>
         </article>
 
-        <article class="mandatory-card">
+        <article class="mandatory-card mandatory-card-highlight" id="mandatory-task-2">
           <div class="mandatory-card-top">
             <span class="task-number">TASK 02</span>
-            <span class="task-icon asi-badge">ASI:ONE</span>
+            <span class="task-icon" aria-label="Giveaway">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8H7.5A2.5 2.5 0 1 1 12 5.5V8zm0 0h4.5A2.5 2.5 0 1 0 12 5.5V8z"/></svg>
+            </span>
           </div>
-          <h3 class="mandatory-card-title">ASI One Registration</h3>
+          <div class="mandatory-giveaway-label">GIVEAWAY SPOTLIGHT</div>
+          <h3 class="mandatory-card-title">BuildHer Bharat Course Giveaway</h3>
           <p class="mandatory-card-desc">
-            Complete the official registration with ASI:ONE Ghaziabad to unlock developer tools and partner ecosystem access.
+            Register through the official course giveaway form to enter the BuildHer Bharat giveaway.
           </p>
-          <a class="mandatory-submit-btn" href="https://forms.gle/QYvd867YRd5genYn9" rel="noopener noreferrer" target="_blank">
-            Complete ASI One Registration <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          <a class="mandatory-submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfIwL7Da4YTHLmneZKc5ZM0ON-Si6zqCE_7C61zLu_2Tcb2xA/viewform" rel="noopener noreferrer" target="_blank">
+            Enter Course Giveaway <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </article>
+
+        <article class="mandatory-card" id="mandatory-task-3">
+          <div class="mandatory-card-top">
+            <span class="task-number">TASK 03</span>
+            <span class="task-icon" aria-label="Portfolio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>
+            </span>
+          </div>
+          <h3 class="mandatory-card-title">Create Your Fueler Portfolio</h3>
+          <p class="mandatory-card-desc">
+            Create and build your professional portfolio on Fueler to complete Mandatory Task 3.
+          </p>
+          <a class="mandatory-submit-btn" href="https://fueler.io/" rel="noopener noreferrer" target="_blank">
+            Create Fueler Portfolio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </article>
 
@@ -189,7 +214,7 @@
       <div class="mandatory-callout">
         <div class="callout-content">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          <span>Both mandatory tasks are required for every individual participant across all registered teams.</span>
+          <span>All three mandatory tasks are required for every individual participant across all registered teams.</span>
         </div>
       </div>
     </div>
@@ -971,6 +996,33 @@
           <h4 class="partner-title">Digimation Flight</h4>
           <p class="partner-role-desc">Career Acceleration &amp; Skill Growth</p>
         </article>
+
+        <article class="partner-card">
+          <span class="partner-role">DOMAIN PARTNER</span>
+          <div class="partner-logo-tile">
+            <img alt=".XYZ Domain Partner logo" class="partner-img" decoding="async" height="768" loading="lazy" src="assets/logo-xyz-domain.png" width="768"/>
+          </div>
+          <h4 class="partner-title">.XYZ</h4>
+          <p class="partner-role-desc">Domain Partner</p>
+        </article>
+
+        <article class="partner-card">
+          <span class="partner-role">PORTFOLIO &amp; CAREER PARTNER</span>
+          <div class="partner-logo-tile">
+            <img alt="Fueler portfolio and career partner logo" class="partner-img" decoding="async" height="768" loading="lazy" src="assets/logo-fueler.jpeg" width="768"/>
+          </div>
+          <h4 class="partner-title">Fueler</h4>
+          <p class="partner-role-desc">Portfolio &amp; Career Partner</p>
+        </article>
+
+        <article class="partner-card">
+          <span class="partner-role">AI INFRASTRUCTURE PARTNER</span>
+          <div class="partner-logo-tile">
+            <img alt="prune AI infrastructure partner logo" class="partner-img" decoding="async" height="768" loading="lazy" src="assets/logo-prune.jpeg" width="768"/>
+          </div>
+          <h4 class="partner-title">prune.</h4>
+          <p class="partner-role-desc">AI Infrastructure Partner</p>
+        </article>
       </div>
 
       <div id="community-partners-slot"></div>
@@ -1089,13 +1141,21 @@
           </div>
         </article>
 
-        <article class="team-card">
+      </div>
+
+      <div class="team-sub-header">
+        <span class="sub-header-num">02</span>
+        <h3>Coordinators</h3>
+      </div>
+
+      <div class="coordinators-grid">
+        <article class="team-card coordinator-card">
           <div class="team-photo-wrap">
-            <img alt="Priya – BuildHer Bharat organiser" class="team-photo" decoding="async" height="1403" loading="lazy" src="assets/priya-profile.jpg" width="862"/>
-            <span class="team-badge">ORGANISER</span>
+            <img alt="Priya – BuildHer Bharat coordinator" class="team-photo" decoding="async" height="1403" loading="lazy" src="assets/priya-profile.jpg" width="862"/>
+            <span class="team-badge badge-coordinator">COORDINATOR</span>
           </div>
           <div class="team-card-body">
-            <span class="team-role-label">ORGANISING LEAD</span>
+            <span class="team-role-label">EVENT COORDINATION</span>
             <h3 class="team-member-name">Priya</h3>
             <p class="team-affiliation">BuildHer Bharat 2026 · Shenfinity</p>
             <div class="team-social-links">
@@ -1112,14 +1172,7 @@
             <div class="team-contact-num">+91 94167 53561</div>
           </div>
         </article>
-      </div>
 
-      <div class="team-sub-header">
-        <span class="sub-header-num">02</span>
-        <h3>Coordinators</h3>
-      </div>
-
-      <div class="coordinators-grid">
         <article class="team-card coordinator-card">
           <div class="team-photo-wrap">
             <img alt="Bhavishka Jangid – BuildHer Bharat coordinator" class="team-photo" decoding="async" height="2048" loading="lazy" src="assets/bhavishka-profile.jpg" width="1536"/>
@@ -1439,7 +1492,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-answer">
-              <p>Every individual team member must complete both required tasks listed on this website: (1) GitHub Repository Submission and (2) ASI One Registration. Completion is mandatory to confirm project eligibility.</p>
+              <p>Every individual team member must complete all three required tasks listed on this website: (1) GitHub Repository Submission, (2) BuildHer Bharat Course Giveaway Registration, and (3) Fueler Portfolio Creation. Completion is mandatory to confirm project eligibility.</p>
             </div>
           </details>
 
@@ -1692,15 +1745,27 @@
       </div>
     </article>
 
-    <article aria-label="AI4Tomorrow community partner" class="community-partner-card">
-      <div class="partner-tier-heading">
-        <span class="partner-tier-tag">COMMUNITY PARTNER</span>
-        <h3>AI4Tomorrow</h3>
-      </div>
-      <div class="partner-logo-tile community-partner-tile">
-        <img alt="AI4Tomorrow logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/ai4tomorrow.png" width="768"/>
-      </div>
-    </article>
+    <div class="community-partners-column">
+      <article aria-label="AI4Tomorrow community partner" class="community-partner-card">
+        <div class="partner-tier-heading">
+          <span class="partner-tier-tag">COMMUNITY PARTNER</span>
+          <h3>AI4Tomorrow</h3>
+        </div>
+        <div class="partner-logo-tile community-partner-tile">
+          <img alt="AI4Tomorrow logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/ai4tomorrow.png" width="768"/>
+        </div>
+      </article>
+
+      <article aria-label="Codllers community partner" class="community-partner-card codllers-partner-card">
+        <div class="partner-tier-heading">
+          <span class="partner-tier-tag">COMMUNITY PARTNER</span>
+          <h3>Codllers</h3>
+        </div>
+        <div class="partner-logo-tile community-partner-tile">
+          <img alt="Codllers logo" class="community-partner-logo" decoding="async" height="768" loading="lazy" src="assets/codllers-logo.png" width="768"/>
+        </div>
+      </article>
+    </div>
   </div>
 </div>`;function h(s){const i='<div id="community-partners-slot"></div>';if(s.includes(i))return s.replace(i,c);const n='<article class="co-title-sponsor-card">';return s.includes(n)?s.replace(n,`${c}
 ${n}`):s}const l=document.getElementById("root");if(!l)throw new Error("BuildHer Bharat root element is missing.");let r=l.querySelector(".site-root");r||(r=document.createElement("div"),r.className="site-root",l.appendChild(r));r.hasAttribute("data-prerendered")||(r.innerHTML=h(p));const t=document.createElement("script");t.src="/script.js";t.async=!1;t.onerror=()=>{const s=document.getElementById("site-loader");s&&(s.classList.add("loader-hidden"),window.setTimeout(()=>s.remove(),900)),document.body.classList.add("page-ready"),console.error("BuildHer Bharat page script could not be loaded.")};document.body.appendChild(t);
